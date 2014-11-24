@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/gilles
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://gillesbertaux.com
+  * I am gilles (https://keybase.io/gilles) on keybase.
+  * I have a public key with fingerprint E099 35CF FD1A DC21 874A  EF2E 53AC E3AE 01D7 5032
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e09935cffd1adc21874aef2e53ace3ae01d75032",
+            "host": "keybase.io",
+            "key_id": "53ace3ae01d75032",
+            "uid": "d3d6ae28907534342526b60c85a13100",
+            "username": "gilles"
+        },
+        "service": {
+            "hostname": "gillesbertaux.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1404072518,
+    "expire_in": 157680000,
+    "prev": "290d892068039a1c216ad5609daba42b1b82fa115c415b6a46563b16ed26e464",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.22
+Comment: https://keybase.io/crypto
+
+yMHwAnicbZFvSFRZGMZnMrXMyiTTDyvSjXTTYbz/595ZFiMzbJfRzEIU5XLuvWfG
+Q+Pc8d47rtPg4lKs+OdDbWkJQkagki5OtREahtquYQWlgkRBQslGBRmogVTouVIf
+gs6Xw3ne3/O855z3360xtgS7GP/0xtw/WXb7g9GlkK00qh+KELKmhgl3hDgB1zcv
+CvigHtRRwCTcBCRFkeEUr1elgKrQlOBiAfTSkGOAAhkASUp1cSRDEw6iWjMsB46R
+gQGdSMMaPkhIxep3+NB6QWVUHkBaEEkXx7AMS3M0L/OkInCAYiiStEAD6gFQAzHt
+Q34/NIgGB4G1OqRgLbLe+Ju6DHUThOqdilaD7UFdMzVF8+NytWkG3ZbbDAct/Dco
+S1+CJBkFVPx0bKiDuoG0AOGmMKmYyEqmWJIlXTRHCQ4C1geRDiVkEZyLF0i8rDaw
+DkfSIqkKIk1imREBhb+MByrHk6IKZMDSMiULtBdQFKewFCfzgOU5npEpHqo0D1me
+xf0NWBvQCDeLrwl8ONJAvgAwQzokGsZHKzfa7Am2uNgN1vBsCZuTvo70v6b41eOL
+se8/lbRXnp09UKEm7o3Jlnq75jv83e27a6qyRgZnombKxwxPd+upstDi1R7z6L70
+M5nOP/OIS8d+Li5fqrA5D58sKLvcHJ5e/Kn+j2A08vB5qj8ml+7r6Rl490uJILy2
+e1vvFCUtdGQ4XjT+tf1zUlYm6Bz3JE54is3Tr2ZR/mTLhTZ2NXeorbTgXjXqTZ4U
+m3J+kMJ3fSttcRMj2b+2DM0guNNXFU77e2pwuevWwP4PR24OoyLp4pa36eyejk7P
+Snf+WGZh3nzhy7nrU7ZlJuX2j4/elF/bhGqZ1Cc70lzb7nsWdg3n9F2Zbn588Nyz
+ZIeR1zn2e/956f/G/uga/DoOdQ==
+=2+ez
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gilles
+
+==================================================================

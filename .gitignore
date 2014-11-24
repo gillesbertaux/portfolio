@@ -1,3 +1,8 @@
 andy/
 bootsy/
 work/
+sass/
+.codekit-cache
+.sass-cache
+config.rb
+config.codekit

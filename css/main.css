@@ -1,1 +1,242 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}h1,h2,p{color:#494949}a{color:#b0b0b0}a:hover{color:#db6565}@font-face{font-family:'merriweatherregular';src:url("../fonts/merriweather-regular-webfont.eot");src:url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/merriweather-regular-webfont.woff") format("woff"),url("../fonts/merriweather-regular-webfont.ttf") format("truetype"),url("../fonts/merriweather-regular-webfont.svg#merriweatherregular") format("svg");font-weight:400;font-style:normal}@font-face{font-family:'merriweatherregular';src:url("../fonts/merriweather-italic-webfont.eot");src:url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/merriweather-italic-webfont.woff") format("woff"),url("../fonts/merriweather-italic-webfont.ttf") format("truetype"),url("../fonts/merriweather-italic-webfont.svg#merriweatheritalic") format("svg");font-weight:400;font-style:italic}@font-face{font-family:'merriweather_sans';src:url("../fonts/merriweathersans-bold-webfont.eot");src:url("../fonts/merriweathersans-bold-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/merriweathersans-bold-webfont.woff") format("woff"),url("../fonts/merriweathersans-bold-webfont.ttf") format("truetype"),url("../fonts/merriweathersans-bold-webfont.svg#merriweather_sansbold") format("svg");font-weight:700;font-style:normal}@font-face{font-family:'merriweather_sans';src:url("../fonts/merriweathersans-italic-webfont.eot");src:url("../fonts/merriweathersans-italic-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/merriweathersans-italic-webfont.woff") format("woff"),url("../fonts/merriweathersans-italic-webfont.ttf") format("truetype"),url("../fonts/merriweathersans-italic-webfont.svg#merriweather_sansitalic") format("svg");font-weight:400;font-style:italic}h1{font-family:"merriweather_sans";font-weight:700;font-style:normal;font-size:1.8em}h2{font-family:"merriweatherregular";font-weight:400;font-style:italic;font-size:1.3em;line-height:1.8}h3{font-family:"merriweather_sans";font-weight:700;font-style:normal;font-size:1.8em}p{font-family:"merriweatherregular";font-weight:400;font-style:italic;font-size:1.3em;line-height:1.8}a{text-decoration:none}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}a,a:hover{-webkit-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out}*{box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{overflow-x:hidden;font-size:16.25px;-webkit-animation:fadeIn 1s ease-out 1;animation:fadeIn 1s ease-out 1;-webkit-overflow-scrolling:touch}p{margin-top:1em}li{list-style-type:none}hr{display:block;width:100%;margin:3em auto 3em;border:0;border-bottom:1px solid #f0f0f0}.grey-sep{border-bottom:1px solid #ddd}.progressbar{position:fixed;top:0;left:0;width:0;height:3.25px;background:#db6565}.wrapper{max-width:755.625px;margin:0 auto;padding:5% 2.5%}.wrapper:after{content:"~";display:block;text-align:center;color:#494949}@media screen and (min-width: 640px){.wrapper{width:90%}}@media screen and (min-width: 768px){.wrapper{width:75%}}header{margin-top:2.25em;margin-bottom:1.25em}.profile-pic{padding:4px;margin:0 auto;margin-bottom:2.25em;display:block;width:110px;height:110px;border:3.25px solid #db6565;border-radius:100%;background:#fff;background-size:100%}.skill{color:#b0b0b0}.project-name{margin-bottom:1em}.project-link{color:#494949;font-family:"merriweather_sans";font-weight:inherit;font-style:inherit;font-size:inherit}footer{margin-bottom:1.25em}footer h3{color:#494949;margin-bottom:1em}.social-links{-webkit-column-count:3;-moz-column-count:3;column-count:3;line-height:1.82813px}.social-link{font-family:"merriweatherregular";font-weight:400;font-style:italic;font-size:1.3em;line-height:1.8}@media screen and (max-width: 640px){.social-links{-webkit-column-count:2;-moz-column-count:2;column-count:2}}
+/*=============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/*=============================================================================
+   SPACING + RATIO
+   ========================================================================== */
+/*=============================================================================
+   COLORS
+   ========================================================================== */
+/**** GLOBAL RULES ****/
+h1, h2, p {
+  color: #494949; }
+
+a {
+  color: #b0b0b0; }
+
+a:hover {
+  color: #db6565; }
+
+/*=============================================================================
+   FONTS
+   ========================================================================== */
+@font-face {
+  font-family: 'merriweatherregular';
+  src: url("../fonts/merriweather-regular-webfont.eot");
+  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype"), url("../fonts/merriweather-regular-webfont.svg#merriweatherregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'merriweatherregular';
+  src: url("../fonts/merriweather-italic-webfont.eot");
+  src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype"), url("../fonts/merriweather-italic-webfont.svg#merriweatheritalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'merriweather_sans';
+  src: url("../fonts/merriweathersans-bold-webfont.eot");
+  src: url("../fonts/merriweathersans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweathersans-bold-webfont.woff") format("woff"), url("../fonts/merriweathersans-bold-webfont.ttf") format("truetype"), url("../fonts/merriweathersans-bold-webfont.svg#merriweather_sansbold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'merriweather_sans';
+  src: url("../fonts/merriweathersans-italic-webfont.eot");
+  src: url("../fonts/merriweathersans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweathersans-italic-webfont.woff") format("woff"), url("../fonts/merriweathersans-italic-webfont.ttf") format("truetype"), url("../fonts/merriweathersans-italic-webfont.svg#merriweather_sansitalic") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+/**** HELPERS ****/
+/**** GLOBAL TYPOGRAPHY ****/
+h1 {
+  font-family: "merriweather_sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em; }
+
+h2 {
+  font-family: "merriweatherregular";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.8; }
+
+h3 {
+  font-family: "merriweather_sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em; }
+
+p {
+  font-family: "merriweatherregular";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.8; }
+
+a {
+  text-decoration: none; }
+
+/*=============================================================================
+   TRANSITIONS
+   ========================================================================== */
+/**** HOVER ****/
+/**** FADEIN ****/
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/**** GLOBAL RULES ****/
+a, a:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  overflow-x: hidden;
+  font-size: 16.25px;
+  -webkit-animation: fadeIn 1s ease-out 1;
+  animation: fadeIn 1s ease-out 1;
+  -webkit-overflow-scrolling: touch; }
+
+p {
+  margin-top: 1em; }
+
+li {
+  list-style-type: none; }
+
+hr {
+  display: block;
+  width: 100%;
+  margin: 3em auto 3em;
+  border: 0;
+  border-bottom: 1px solid #f0f0f0; }
+
+.grey-sep {
+  border-bottom: 1px solid #ddd; }
+
+.progressbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3.25px;
+  background: #db6565; }
+
+.wrapper {
+  max-width: 755.625px;
+  margin: 0 auto;
+  padding: 5% 2.5%; }
+
+.wrapper:after {
+  content: "~";
+  display: block;
+  text-align: center;
+  color: #494949; }
+
+@media screen and (min-width: 640px) {
+  .wrapper {
+    width: 90%; } }
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 75%; } }
+header {
+  margin-top: 2.25em;
+  margin-bottom: 1.25em; }
+
+.profile-pic {
+  padding: 4px;
+  margin: 0 auto;
+  margin-bottom: 2.25em;
+  display: block;
+  width: 110px;
+  height: 110px;
+  border: 3.25px solid #db6565;
+  border-radius: 100%;
+  background: #fff;
+  background-size: 100%; }
+
+.sections {
+  margin: 2.5em auto;
+  font-size: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #494949;
+  background: #f0f0f0;
+  padding: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 170px; }
+
+.skill {
+  color: #b0b0b0; }
+
+.project-name {
+  margin-bottom: 1em; }
+
+.project-link {
+  color: #494949;
+  font-family: "merriweather_sans";
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit; }
+
+footer {
+  margin-bottom: 1.25em; }
+
+footer h3 {
+  color: #494949;
+  margin-bottom: 1em; }
+
+.social-links {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  line-height: 1.82813px; }
+
+.social-link {
+  font-family: "merriweatherregular";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.8; }
+
+@media screen and (max-width: 640px) {
+  .social-links {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }

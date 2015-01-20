@@ -34,26 +34,14 @@ h1, h2, p {
   color: #494949; }
 
 a {
-  color: #b0b0b0; }
+  color: #db6565; }
 
 a:hover {
-  color: #db6565; }
+  text-decoration: underline; }
 
 /*=============================================================================
    FONTS
    ========================================================================== */
-@font-face {
-  font-family: 'merriweatherregular';
-  src: url("../fonts/merriweather-regular-webfont.eot");
-  src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype"), url("../fonts/merriweather-regular-webfont.svg#merriweatherregular") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'merriweatherregular';
-  src: url("../fonts/merriweather-italic-webfont.eot");
-  src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype"), url("../fonts/merriweather-italic-webfont.svg#merriweatheritalic") format("svg");
-  font-weight: 400;
-  font-style: italic; }
 @font-face {
   font-family: 'merriweather_sans';
   src: url("../fonts/merriweathersans-bold-webfont.eot");
@@ -65,33 +53,36 @@ a:hover {
   src: url("../fonts/merriweathersans-italic-webfont.eot");
   src: url("../fonts/merriweathersans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweathersans-italic-webfont.woff") format("woff"), url("../fonts/merriweathersans-italic-webfont.ttf") format("truetype"), url("../fonts/merriweathersans-italic-webfont.svg#merriweather_sansitalic") format("svg");
   font-weight: 400;
-  font-style: italic; }
+  font-style: normal; }
 /**** HELPERS ****/
+strong {
+  font-weight: 600; }
+
 /**** GLOBAL TYPOGRAPHY ****/
 h1 {
-  font-family: "merriweather_sans";
+  font-family: "merriweather_sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8em; }
+  font-size: 1.2em; }
 
 h2 {
-  font-family: "merriweatherregular";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-style: italic;
-  font-size: 1.3em;
+  font-style: normal;
+  font-size: 1em;
   line-height: 1.8; }
 
 h3 {
-  font-family: "merriweather_sans";
+  font-family: "merriweather_sans", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8em; }
+  font-size: 1.2em; }
 
 p {
-  font-family: "merriweatherregular";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-style: italic;
-  font-size: 1.3em;
+  font-style: normal;
+  font-size: 1em;
   line-height: 1.8; }
 
 a {
@@ -141,11 +132,15 @@ li {
 hr {
   display: block;
   width: 100%;
-  margin: 3em auto 3em;
+  border: 0; }
+
+.sep {
+  margin: 2em auto 2em;
   border: 0;
   border-bottom: 1px solid #f0f0f0; }
 
-.grey-sep {
+.top-sep {
+  margin: 13px auto 3em auto;
   border-bottom: 1px solid #ddd; }
 
 .progressbar {
@@ -190,17 +185,9 @@ header {
   background-size: 100%; }
 
 .sections {
-  margin: 2.5em auto;
+  margin: 3em auto 0 auto;
   font-size: 0.9em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #494949;
-  background: #f0f0f0;
-  padding: 15px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  width: 170px; }
+  color: #ddd; }
 
 .skill {
   color: #b0b0b0; }
@@ -210,15 +197,32 @@ header {
 
 .project-link {
   color: #494949;
-  font-family: "merriweather_sans";
+  font-family: "merriweather_sans", sans-serif;
   font-weight: inherit;
   font-style: inherit;
   font-size: inherit; }
 
+.project-link:hover {
+  text-decoration: none; }
+
+.project-link:hover span {
+  margin-left: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.project-link span {
+  font-size: 0.7em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
 footer {
   margin-bottom: 1.25em; }
 
-footer h3 {
+.elsewhere {
   color: #494949;
   margin-bottom: 1em; }
 
@@ -229,10 +233,10 @@ footer h3 {
   line-height: 1.82813px; }
 
 .social-link {
-  font-family: "merriweatherregular";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-style: italic;
-  font-size: 1.3em;
+  font-style: normal;
+  font-size: 1em;
   line-height: 1.8; }
 
 @media screen and (max-width: 640px) {

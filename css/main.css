@@ -200,7 +200,18 @@ header {
   font-family: "merriweather_sans", sans-serif;
   font-weight: inherit;
   font-style: inherit;
-  font-size: inherit; }
+  font-size: inherit;
+  position: relative; }
+
+.project-live:before {
+  content: "";
+  width: 4.875px;
+  height: 4.875px;
+  background: #418CC2;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 12px; }
 
 .project-link:hover {
   text-decoration: none; }

@@ -178,10 +178,10 @@ header {
   color: #ccc; }
 
 .skill {
-  padding: 3px 5px;
+  padding: 3px 10px;
   display: inline-block;
   background: #F3F3F3;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #999;
   font-size: 0.7em;
   text-transform: lowercase;

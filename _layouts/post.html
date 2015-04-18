@@ -8,6 +8,7 @@
   <div class="wrapper">
 
   	<header class="post-header">
+      <p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">All Posts</a> &bull; <a title="back to posts" href="http://gillesbertaux.com/">About me</a></p> 
 	    <h1 class="post-title">{{ page.title }}</h1>
 	    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
   	</header>
@@ -16,7 +17,7 @@
     {{ content }}
   	</article>
 
-  	<p class="post-share">Thanks for reading! <a class="post-share-link" href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=gillesbertaux">Share it on Twitter</a> and let me know what you think ;)</p>
+  	<p class="post-share">Thanks for reading! <a class="post-share-link" target="_blank" href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=gillesbertaux" onclick="ga('send', 'event', 'link-twitter', 'click', 'shared on twitter' {'page': '{{ page.url }}'});">Share it on Twitter</a> and let me know what you think ;)</p>
 
   </div>
   

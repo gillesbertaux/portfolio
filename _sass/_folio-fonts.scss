@@ -23,7 +23,7 @@ strong { font-weight: 600; }
 $main-font: 'Open Sans', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
-@mixin title($weight, $style, $size) { font-family: $secondary-font; font-weight: $weight; font-style: $style; font-size: $size; }
+@mixin title($weight, $style, $size) { font-family: $secondary-font; font-weight: $weight; font-style: $style; font-size: $size; line-height: 1.2; }
 @mixin corpus($weight, $style, $size) { font-family: $main-font; font-weight: $weight; font-style: normal; font-size: $size; line-height: 1.8; }
 
 @mixin main-title { @include title($bold, normal, $title-size); }
@@ -37,6 +37,6 @@ $secondary-font: 'Lato', sans-serif;
 h1 { @include main-title; }
 h2 {  @include corpus-italic; }
 h3 { @include sub-title; }
-p  { @include corpus-italic; }
-a  { text-decoration: none; }
+p  { @include corpus-normal; }
+a, a:hover { text-decoration: none; }
 

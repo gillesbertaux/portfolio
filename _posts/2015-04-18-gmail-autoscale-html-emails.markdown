@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to Prevent Gmail App From Autoscaling HTML Emails"
+description: Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout.
 date:   2015-04-18
 permalink: /blog/:title/
 ---

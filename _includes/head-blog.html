@@ -3,14 +3,18 @@
 	<title>{{ site.title }} | {{ page.title }}</title>
 	<meta name="google-site-verification" content="dP8o9sKNCibdnxzpaDA0blhIHptcacqhvKiVzYIdGME" />
 	
-	<meta name="description" content="{{ post.excerpt | remove: '<p>' | remove: '</p>' }}">
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
 	<meta property='og:locale' content='fr_FR'/>
 	<meta property='og:title' content='{{ site.title }} | {{ page.title }}'/>
-	<meta property='og:description' content='{{ site.description }}'/>
+	{% if page.description %}
+	<meta property='og:description' content="{{ page.description }}"/>
+	{% endif %}
 	<meta property='og:url' content='{{ site.url }}'/>
 	<meta property='og:site_name' content='{{ site.title }}'/>
 	<meta property='og:type' content='website'/>
@@ -19,7 +23,9 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@{{ site.twitter_username }}">
 	<meta name="twitter:title" content="{{ site.title }} | {{ page.title }}">
-	<meta name="twitter:description" content="{{ site.description }}">
+	{% if page.description %}
+	<meta name="twitter:description" content="{{ page.description }}">
+	{% endif %}
 	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
 	<meta name="twitter:image:src" content="http://www.gillesbertaux.com/img/me.png">
 	<meta name="twitter:domain" content="{{ site.url }}">

@@ -32,7 +32,7 @@ header { margin-top: 2.25rem; margin-bottom: 1.25rem; }
 
 // Blog Index
 .index-post { margin: 0 0 2rem 0; }
-.index-post-title { @include main-title; }
+.index-post-title { @include main-title; line-height: 1.2; }
 .index-post-link { color: $primary; }
 .index-post-link span { font-size: .8rem; @include hover(.3s); }
 .index-post-link:hover { text-decoration: none; }
@@ -41,13 +41,19 @@ header { margin-top: 2.25rem; margin-bottom: 1.25rem; }
 // Blog Post
 pre, code { font-size: $default; border: 1px solid $grey; @include radius(3px); background-color: #eef; }
 code { padding: 1px 5px; }
-pre { padding: 8px 12px; overflow-x: scroll;
-    > code { border: 0; padding-right: 0; padding-left: 0;}
-}
+pre { padding: 8px 12px; overflow-x: scroll; }
+pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-header { margin: 0; text-align: center; }
-.post-title { font-size: 2rem; }
+.post-title { font-size: 2rem; line-height: 1.2; }
 .post-meta { color: $lightgrey; }
 .post-share { margin-top: 2rem; font-family: $secondary-font; font-size: 1.1rem; font-weight: $bold; text-align: center; }
+blockquote { color: $grey; border-left: 4px solid $lightgrey; padding-left: 1rem; font-size: $default; }
+blockquote p { font-style: italic; }
+blockquote > :last-child { margin-bottom: 0; }
+.post-content ul { padding-left: 1rem; margin-top: 1rem; }
+.post-content li { list-style-type: initial; @include corpus-italic; }
+
+@media screen and (max-width:$phone) { .post-title { font-size: 1.5rem; } }
 
 
 // Footer

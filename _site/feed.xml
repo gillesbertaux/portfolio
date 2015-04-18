@@ -5,54 +5,48 @@
     <description></description>
     <link>http://gillesbertaux.com/</link>
     <atom:link href="http://gillesbertaux.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Apr 2015 03:17:08 +0200</pubDate>
-    <lastBuildDate>Sat, 18 Apr 2015 03:17:08 +0200</lastBuildDate>
+    <pubDate>Sat, 18 Apr 2015 19:03:30 +0200</pubDate>
+    <lastBuildDate>Sat, 18 Apr 2015 19:03:30 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>How to Prevent Gmail App From Autoscaling HTML Emails</title>
+        <description>&lt;p&gt;Emails clients are terrible at doing their job. Especially Gmail and, obviously Outlook. Recently, I had this very frustrating experience: we had a HTML emails, optimized for desktop email clients BUT the Gmail app on iOS and Android were autoscaling the typography by 50% breaking the whole layout. After some research, I finally found a hack to solve this.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;But let me first list all of the potential solutions that I tried. Maybe those will fix your problem:&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add a table row width a single cell set to your email width.&lt;/li&gt;
+  &lt;li&gt;Add  &lt;code&gt;&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&amp;gt;&lt;/code&gt; and then set an image (can be a 1px image) that spans the full width of the page.&lt;/li&gt;
+  &lt;li&gt;Add add min-width to your background/container table.&lt;/li&gt;
+  &lt;li&gt;Add `&amp;lt;body style=&quot;-webkit-text-size-adjust:none;&quot;&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That might solve your problem on Android. But, for me, at least, the problem was persisting on the Gmail iOS app. Until I found a hack on a blog called &lt;a href=&quot;http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/&quot;&gt;Freshinbox&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And finally here’s the hack, put this code at the bottom of your email above the closing body tag:&lt;/p&gt;
 
+&lt;p&gt;&lt;code&gt;&amp;lt;div style=&quot;display:none; white-space:nowrap; font:15px courier; color:#ffffff;&quot;&amp;gt;
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s the explanation:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The white-space:nowrap with the dashed line creates a line about 500px across that when bumped up in size will exceed 700px causing the Gmail app to not apply the font change.&lt;/p&gt;
+
+  &lt;p&gt;The display:none style causes non-Gmail clients to hide the block (Gmail ignores display:none). When the email is viewed in say, a non-Gmail mobile client, it won’t affect your responsive layout.&lt;/p&gt;
+
+  &lt;p&gt;The font is set to white so the dashes are not displayed when viewed in Gmail. If you have a different color background, set it to your background color.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hope this helps ;)&lt;/p&gt;
+
+&lt;p&gt;Btw: I’m working on a template for bootstrapping scalable newsletter optimized for all email clients called Mailstrap, &lt;a href=&quot;https://github.com/gillesbertaux/mailstrap&quot;&gt;here’s the github&lt;/a&gt;, you are more than welcome to fork it or leave a comment!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 17 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://gillesbertaux.com/welcome-to-jekyll-2/</link>
-        <guid isPermaLink="true">http://gillesbertaux.com/welcome-to-jekyll-2/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 17 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://gillesbertaux.com/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://gillesbertaux.com/welcome-to-jekyll/</guid>
+        <pubDate>Sat, 18 Apr 2015 00:00:00 +0200</pubDate>
+        <link>http://gillesbertaux.com/blog/gmail-autoscale-html-emails/</link>
+        <guid isPermaLink="true">http://gillesbertaux.com/blog/gmail-autoscale-html-emails/</guid>
         
         
       </item>

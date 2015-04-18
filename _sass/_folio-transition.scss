@@ -1,0 +1,33 @@
+/*=============================================================================
+   TRANSITIONS
+   ========================================================================== */
+
+/**** HOVER ****/
+
+@mixin hover($time) {
+  -webkit-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  transition: all $time ease-in-out;
+}
+
+/**** FADEIN ****/
+
+@mixin fadeIn($time) {
+  -webkit-animation: fadeIn $time ease-out 1;
+  animation: fadeIn $time ease-out 1;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    to { opacity: 1; };
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    to { opacity: 1; };
+}
+
+/**** GLOBAL RULES ****/
+
+a, a:hover { @include hover(.5s); }

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<header>
+	
+	<article>
+		<h1>{{ site.title }} Journal</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel atque quod sed, doloremque, nisi provident animi sapiente, eos, ipsam assumenda totam. Nesciunt dolorum, quasi ducimus doloribus molestiae, aut nostrum cum.</p>
+	</article>
+
+</header>
+
+<hr class="top-sep">
+
+<section>
+	<ul>
+		{% for post in site.posts %}
+		<li class="index-post">
+			<h2 class="index-post-title"><a class="index-post-link" target="_blank" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} <span>&#10142;</span></a></h2>
+			<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+		</li>
+		{% endfor %}
+    </ul>
+</section>

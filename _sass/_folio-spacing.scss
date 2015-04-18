@@ -1,0 +1,15 @@
+/*=============================================================================
+   SPACING + RATIO
+   ========================================================================== */
+
+$ratio: 1.625px;
+$main-container: $ratio*465;
+
+$phone: 640px;
+$tablet: 768px;
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}

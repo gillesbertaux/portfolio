@@ -1,0 +1,16 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@charset "UTF-8";
+
+@import "_folio-reset.scss";
+@import "_folio-spacing.scss";
+@import "_folio-colors.scss";
+@import "_folio-fonts.scss";
+@import "_folio-transition";
+
+@import "_syntax-highlighting";
+
+@import "_folio-main.scss";

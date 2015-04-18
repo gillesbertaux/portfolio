@@ -1,0 +1,59 @@
+* { box-sizing: border-box; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { overflow-x: hidden; font-size: $ratio*10; @include fadeIn(1s); -webkit-overflow-scrolling: touch; }
+p { margin-top: 1rem; }
+li { list-style-type: none; }
+
+hr { display: block; width: 100%; border: 0; }
+.sep { margin: 2rem auto 2rem; border: 0; border-bottom: 1px solid $verylightgrey; }
+.top-sep { margin: $ratio*4 auto 3rem auto; border-bottom: 1px solid $grey;  }
+
+.progressbar { position: fixed; top: 0; left: 0; width: 0; height: $ratio*2; background: $secondary; }
+
+.wrapper { max-width: $main-container; margin: 0 auto; padding: 5% 2.5%; }
+.wrapper:after { content: "~"; display: block; text-align: center; color: $primary; }
+
+@media screen and (min-width:$phone) { .wrapper { width: 90%; } }
+@media screen and (min-width:$tablet) { .wrapper { width: 75%; } }
+
+header { margin-top: 2.25rem; margin-bottom: 1.25rem; }
+.sections { margin: 3rem auto 0 auto; font-size: $small; color: $grey; }
+
+// Portfolio
+.skill { padding: 3px 10px; display: inline-block; background: #F3F3F3; border-radius: 4px; color: #999; font-size: $verysmall; text-transform: lowercase; font-weight: $bold; }
+.project-name { margin-bottom: 1rem; }
+.project-link { color: $primary; @include title(inherit, inherit, inherit); position: relative; }
+.project-link span { font-size: .8rem; @include hover(.3s); }
+.project-live:before { content: ""; width: $ratio*3; height: $ratio*3; background: #418CC2; border-radius: 50%; position: absolute; left: -10px; top: 12px; }
+.project-link:hover { text-decoration: none; }
+.project-link:hover span { margin-left: 3px; @include hover(.3s); }
+.project-link span { font-size: $verysmall; @include hover(.3s); }
+
+@media screen and (max-width:$phone) { .project-live:before { display: none; } }
+
+// Blog Index
+.index-post { margin: 0 0 2rem 0; }
+.index-post-title { @include main-title; }
+.index-post-link { color: $primary; }
+.index-post-link span { font-size: .8rem; @include hover(.3s); }
+.index-post-link:hover { text-decoration: none; }
+.index-post-link:hover span { margin-left: 3px; @include hover(.3s); }
+
+// Blog Post
+pre, code { font-size: $default; border: 1px solid $grey; @include radius(3px); background-color: #eef; }
+code { padding: 1px 5px; }
+pre { padding: 8px 12px; overflow-x: scroll;
+    > code { border: 0; padding-right: 0; padding-left: 0;}
+}
+.post-header { margin: 0; text-align: center; }
+.post-title { font-size: 2rem; }
+.post-meta { color: $lightgrey; }
+.post-share { margin-top: 2rem; font-family: $secondary-font; font-size: 1.1rem; font-weight: $bold; text-align: center; }
+
+
+// Footer
+footer { margin-bottom: 1.25rem; }
+.elsewhere { color: $darkgrey; margin-bottom: 1rem; }
+.social-links { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; line-height: $ratio*1.125; }
+.social-link { @include corpus($default, italic, $corpus-size); }
+
+@media screen and (max-width:$phone) { .social-links { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; } }

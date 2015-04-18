@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+{% include head-blog.html %}
+<body> 
+
+  <div class="progressbar"></div>
+
+  <div class="wrapper">
+
+  	<header class="post-header">
+	    <h1 class="post-title">{{ page.title }}</h1>
+	    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+  	</header>
+    
+    <article class="post-content">
+    {{ content }}
+  	</article>
+
+  	<p class="post-share">Thanks for reading! <a class="post-share-link" href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=gillesbertaux">Share it on Twitter</a> and let me know what you think ;)</p>
+
+  </div>
+  
+  <img style="display:none;height:1px;width:1px;position:absolute;" src="https://www.linkedin.com/profile/view?id=129538418" alt="linkedin profile">
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src='/js/min/main-min.js'></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27077783-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+

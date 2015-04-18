@@ -1,0 +1,19 @@
+/*=============================================================================
+   COLORS
+   ========================================================================== */
+
+$salmon: #db6565;
+$darkgrey: #444;
+$grey: #ccc;
+$lightgrey: #bbb;
+$verylightgrey: #f0f0f0;
+
+$primary: $darkgrey;
+$secondary: $salmon;
+$tertiary: $lightgrey;
+
+/**** GLOBAL RULES ****/
+
+h1, h2, p { color: $primary; }
+a { color: $secondary; }
+a:hover { text-decoration: underline; }

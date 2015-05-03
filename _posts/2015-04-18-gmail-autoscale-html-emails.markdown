@@ -11,17 +11,17 @@ Emails clients are terrible at doing their job. Especially Gmail and, obviously 
 But let me first list all of the potential solutions that I tried. Maybe those will fix your problem:
 
 * Add a table row width a single cell set to your email width.
-* Add  `<meta name="viewport" content="width=device-width, initial-scale=1"/>` and then set an image (can be a 1px image) that spans the full width of the page.
+* Add  *meta name="viewport" content="width=device-width, initial-scale=1"* and then set an image (can be a 1px image) that spans the full width of the page.
 * Add add min-width to your background/container table.
-* Add `<body style="-webkit-text-size-adjust:none;">
+* Add *<body style="-webkit-text-size-adjust:none;">*
 
 That might solve your problem on Android. But, for me, at least, the problem was persisting on the Gmail iOS app. Until I found a hack on a blog called [Freshinbox](http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/).
 
 And finally here's the hack, put this code at the bottom of your email above the closing body tag:
 
-```<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff;">
+`<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff;">
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-</div>```
+</div>`
 
 Here's the explanation:
 

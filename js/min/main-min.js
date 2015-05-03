@@ -1,1 +1,0 @@
-$(document).ready(function(){$(window).scroll(function(){var o=$(document).scrollTop(),n=o/($(document).height()-$(window).height()),c=100*n+"%";$(".progressbar").css("width",c+"%")})});

@@ -36,7 +36,7 @@
 	<link rel="author" href="https://plus.google.com/u/0/+GillesBertaux/" />
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body> 
@@ -46,9 +46,8 @@
   <div class="wrapper">
 
   	<header class="post-header">
-      <p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">All Posts</a> &bull; <a title="back to posts" href="http://gillesbertaux.com/">About me</a></p> 
+      <p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">Back to all posts</a></p> 
 	    <h1 class="post-title">How to Prevent Gmail App From Autoscaling HTML Emails</h1>
-	    <p class="post-meta">Apr 18, 2015</p>
   	</header>
     
     <article class="post-content">
@@ -58,9 +57,9 @@
 
 <ul>
   <li>Add a table row width a single cell set to your email width.</li>
-  <li>Add  <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;</code> and then set an image (can be a 1px image) that spans the full width of the page.</li>
+  <li>Add  <em>meta name=”viewport” content=”width=device-width, initial-scale=1”</em> and then set an image (can be a 1px image) that spans the full width of the page.</li>
   <li>Add add min-width to your background/container table.</li>
-  <li>Add `&lt;body style="-webkit-text-size-adjust:none;"&gt;</li>
+  <li>Add <em>&lt;body style="-webkit-text-size-adjust:none;"&gt;</em></li>
 </ul>
 
 <p>That might solve your problem on Android. But, for me, at least, the problem was persisting on the Gmail iOS app. Until I found a hack on a blog called <a href="http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/">Freshinbox</a>.</p>
@@ -87,13 +86,25 @@
 
   	</article>
 
-  	<p class="post-share">Thanks for reading! <a class="post-share-link" target="_blank" href="http://twitter.com/intent/tweet?url=http://gillesbertaux.com/blog/gmail-autoscale-html-emails/&amp;text=How to Prevent Gmail App From Autoscaling HTML Emails&amp;via=gillesbertaux" onclick="ga('send', 'event', 'link-twitter', 'click', 'shared on twitter' {'page': '/blog/gmail-autoscale-html-emails/'});">Share it on Twitter</a> and let me know what you think ;)</p>
+    <div id="disqus_thread" class="post-comments"></div>
 
+  </div>
+
+  <div class="post-fixed-footer">
+    <div class="post-fixed-footer-left">
+      <a href="http://gillesbertaux.com">Gilles Bertaux</a>
+      <span class="post-meta">Apr 18, 2015</span>
+    </div>
+    <div class="post-fixed-footer-right">
+      <span class="post-share-text">Thanks for reading and let me know what you think ;)</span>
+      <a class="post-share-link" target="_blank" href="http://twitter.com/intent/tweet?url=http://gillesbertaux.com/blog/gmail-autoscale-html-emails/&amp;text=How to Prevent Gmail App From Autoscaling HTML Emails&amp;via=gillesbertaux" onclick="ga('send', 'event', 'link-twitter', 'click', 'shared on twitter' {'page': '/blog/gmail-autoscale-html-emails/'});">Share it on Twitter</a>
+       
+    </div>
   </div>
   
   <img style="display:none;height:1px;width:1px;position:absolute;" src="https://www.linkedin.com/profile/view?id=129538418" alt="linkedin profile">
   <script src="/js/jquery-1.11.0.min.js"></script>
-  <script src='/js/min/main-min.js'></script>
+  <script src='/js/main.min.js'></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -102,8 +113,19 @@
 
   ga('create', 'UA-27077783-5', 'auto');
   ga('send', 'pageview');
-
-</script>
+  </script>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'gillesbertaux';
+      
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </body>
 </html>
 

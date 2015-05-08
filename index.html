@@ -9,15 +9,6 @@ layout: default
 		
 		<p>I do: <strong>Product Management</strong>, <strong>Product Design</strong> & <strong>Growth</strong>.<br />Current status: <strong>Growth Hacker</strong> at <a href="http://mention.com" target="_blank">Mention</a>.<br />Formerly: <strong>Product Designer</strong> at <a href="http://totems.co" target="_blank">TOTEMS</a> (acquired by Stripe).</p>
 
-		{% assign day = site.time | date: '%A'  %}
-		{% if day == "Monday" %}
-		<p><em>Hang on, {{ day }} is almost over! Have a great week!</em></p>
-		{% elsif day == "Friday" %}
-		<p><em>TGIF! Have a great week-end!</em></p>
-		{% else %}
-		<p><em>Ugh week-end is almost over...Happy {{ day }} though!</em></p>
-		{% endif %}
-
 	</article>
 </header>
 

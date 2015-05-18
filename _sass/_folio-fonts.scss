@@ -36,7 +36,8 @@ $secondary-font: 'Lato', sans-serif;
 /**** GLOBAL TYPOGRAPHY ****/
 
 h1 { @include main-title; }
-h2 {  @include corpus-italic; }
+h2 { @include corpus-italic; }
+.post-content h2 { @include sub-title; }
 h3 { @include sub-title; }
 p  { @include corpus-normal; }
 a, a:hover { text-decoration: none; }

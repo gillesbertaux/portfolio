@@ -10,6 +10,7 @@
   	<header class="post-header">
       <p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">Back to all posts</a></p> 
 	    <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">Published on {{ page.date | date: "%b %-d, %Y" }}</span></p>
   	</header>
     
     <article class="post-content">
@@ -22,14 +23,16 @@
 
   <div class="post-fixed-footer">
     <div class="post-fixed-footer-left">
-      <a href="http://gillesbertaux.com">Gilles Bertaux</a>
-      <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+      {% if page.previous %} 
+      <a class="post-next" title="{{ page.previous.title }}" href="{{ page.previous.url }}">Previous post</a>
+      {% endif %} 
+    </div>
+    <div class="post-fixed-footer-center">
+      <span class="post-share-text">Thanks for reading! </span><a class="post-share-link" target="_blank" href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=gillesbertaux" onclick="ga('send', 'event', 'link-twitter', 'click', 'shared on twitter' {'page': '{{ page.url }}'});">Share it on Twitter</a><span class="post-share-text"> and let me know what you think ;)</span>
     </div>
     <div class="post-fixed-footer-right">
-      <span class="post-share-text">Thanks for reading and let me know what you think ;)</span>
-      <a class="post-share-link" target="_blank" href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=gillesbertaux" onclick="ga('send', 'event', 'link-twitter', 'click', 'shared on twitter' {'page': '{{ page.url }}'});">Share it on Twitter</a>
       {% if page.next %} 
-      <a class="post-next" href="{{ page.next.url }}">Next post <span>&#10142;</span></a>
+      <a class="post-next" title="{{ page.next.title }}" href="{{ page.next.url }}">Next post</a>
       {% endif %} 
     </div>
   </div>

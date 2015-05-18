@@ -3,10 +3,10 @@
    ========================================================================== */
 
 $ratio: 1.625px;
-$main-container: $ratio*465;
+$main-container: $ratio*430;
 
 $phone: 640px;
-$tablet: 768px;
+$tablet: 850px;
 
 @mixin radius($radius) {
   -webkit-border-radius: $radius;

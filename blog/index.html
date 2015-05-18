@@ -5,23 +5,22 @@ layout: default
 <header>
 	
 	<p class="post-nav"><a title="back home" href="http://gillesbertaux.com/">About me</a></p> 
-	<h1 class="index-title">My Journal on Products, Design & Startups</h1>
-	<blockquote class="index-desc">
-		<p>Hi there, this my blog section, thanks for passing by! Nothing fancy here, just opinions and personal tips from my own experiments on very different topics but mostly around startups and products.</p>
-	</blockquote>
+	<h1 class="index-title">I (try to) write about Products, Design & Startups</h1>
+	<p>Hi there, this my blog section, thanks for passing by! Nothing fancy here, just opinions and personal tips from my own experiments on very different topics but mostly around startups and products. Want to subscribe? Here's the <a href="http://gillesbertaux.com/feed.xml">XML feed</a>.</p>
 
 </header>
 
 <p class="sections"><strong>HERE ARE ALL MY BLOG POSTS</strong></p>
 <hr class="top-sep">
 
-<section>
+<section class="index-posts">
 	<ul>
 		{% for post in site.posts %}
 		<li class="index-post">
 			<h2 class="index-post-title"><a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} <span>&#10142;</span></a></h2>
+			<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
 			<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-			<p><a title="{{ post.title }}" href="{{ post.url }}">Sounds interesting? Read more</a></p>
+			<p class="index-read-more"><a title="{{ post.title }}" href="{{ post.url }}">Sounds interesting? Read more</a></p>
 		</li>
 		{% endfor %}
     </ul>

@@ -55,7 +55,7 @@ code { padding: 1px 5px; display: block; }
 pre { padding: 8px 12px; overflow-x: scroll; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-header { margin: 0; text-align: left; }
-.post-title { font-size: 1.8rem; line-height: 1; letter-spacing: -0.04px; font-weight: $verybold; text-align: left; margin: 1.5rem 0 0 0; }
+.post-title { font-size: 1.8rem; line-height: 1.2; letter-spacing: -0.04px; font-weight: $verybold; text-align: left; margin: 1.5rem 0 0 0; }
 .post-meta { color: $lightgrey; }
 .post-share { text-align: center; margin: $ratio*10 0; }
 .post-share-text { font-family: $secondary-font; font-weight: $default; color: $darkgrey; }
@@ -74,7 +74,7 @@ blockquote > :last-child { margin-bottom: 0; }
 .post-fixed-footer-left { text-align: left; width: 20%; }
 .post-fixed-footer-center { text-align: center; width: 60%; }
 .post-fixed-footer-right { text-align: right; width: 20%; }
-.post-comments { margin-top: 2rem; }
+.post-comments { margin-top: 4rem; }
 
 @media screen and (max-width:$phone) { 
 	.post-title { font-size: 1.5rem; line-height: 1.3; }

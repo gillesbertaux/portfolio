@@ -1,32 +1,71 @@
 * { box-sizing: border-box; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-body { overflow-x: hidden; font-size: $ratio*10; @include fadeIn(1s); -webkit-overflow-scrolling: touch; }
+body { overflow-x: hidden; font-size: 16px; @include fadeIn(1s); -webkit-overflow-scrolling: touch; }
 
-p { margin-top: 1rem; }
+p { margin-top: 10px; }
 li { list-style-type: none; }
-a { border-bottom: 1px solid #fff; }
-a:hover { border-bottom-color: $salmon; }
+a { border-bottom: 1px solid rgba(60,168,219,.1); }
+a:hover { border-bottom-color: $blue; }
 
 hr { display: block; width: 100%; border: 0; }
-.sep { margin: 2rem auto 2rem; border: 0; border-bottom: 1px solid $verylightgrey; }
-.top-sep { margin: $ratio*4 auto 3rem auto; border-bottom: 1px solid $grey;  }
-
+.sep { margin: 2rem auto 2rem; border: 0; border-bottom: 1px solid $lightgrey; }
+.top-sep { max-width: 650px; margin: 15px auto 42px auto; border-bottom: 1px solid $lightgrey;  }
 .progressbar { position: fixed; top: 0; left: 0; width: 0; height: $ratio*2; background: $secondary; }
-
-.wrapper { max-width: $main-container; margin: 0 auto; padding: 2.5% 2.5%; }
+.wrapper { width: 100%; margin: 0 auto; }
+.main-section, .presentation { max-width: 650px; margin: 0 auto 84px auto; }
 
 @media screen and (min-width:$phone) { .wrapper { width: 90%; } }
-@media screen and (min-width:$tablet) { .wrapper { width: 75%; } }
+@media screen and (min-width:$tablet) { .wrapper { width: 100%; } }
 
 header { margin-top: 2.25rem; margin-bottom: 1.25rem; }
-.sections { margin: 3rem auto 0 auto; font-size: $small; color: $grey; }
-.last-notes { border-top: 1px solid $verylightgrey; padding-top: $ratio*20; margin-top: 3rem; }
-.last-notes { color: $lightgrey; }
-.last-notes a { color: #777; }
-.last-notes a:hover { border-bottom: 1px solid #777; }
 
-// Portfolio
-.skill { padding: 2px 10px; display: inline-block; background: #f3f3f3; @include radius(4px); color: #999; font-size: .8rem; font-family: $secondary-font; text-transform: lowercase; font-weight: $bold; }
-.project-name { margin-bottom: 1rem; line-height: 1.2; }
+.sections { max-width: 650px; margin: 0 auto 0 auto; font-size: $small; color: $grey; display: flex; align-items: center; }
+.sections p { margin: 0; color: #9013FE; }
+.sections img { margin-right: 10px; height: 24px; }
+.sections--work { color: #9013FE; }
+.sections--open { color: #5AD64E; }
+.sections--talks { color: #00DBAA; }
+.sections--blog { color: #FF0081; }
+
+// Last notes
+.last-notes { border-top: 1px solid $verylightgrey; padding: 21px; margin-top: 42px; text-align: center; }
+.last-notes { color: $grey; }
+.last-notes a { color: $darkgrey; border: none; }
+
+// Announcement
+.announcement { 
+	padding: 21px; 
+	text-align: center; 
+	background-color: $verylightgrey; 
+	border-bottom: 1px solid $lightgrey; 
+	margin-bottom: 84px; 
+}
+.announcement p { margin: 0; }
+
+// Projects
+.project-img { 
+	border: 5px solid #fff; 
+	border-radius: 100%; 
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.5); 
+	margin-right: 30px;
+	width: 84px;
+	height: auto;
+}
+.skill { 
+	padding: 5px 15px; 
+	background: $verylightgrey; 
+	@include radius(2px); 
+	color: rgba(0,0,0,.3); 
+	font-size: 12px; 
+	font-family: $secondary-font; 
+	font-weight: $bold; 
+	margin-right: 15px;
+}
+.featured-icon { border: none; }
+.featured-icon img { height: 24px; width: auto; }
+.featured-icon--medium img { height: 16px; }
+.project-header { display: flex; justify-content: flex-start; align-items: center; }
+.project { display: flex; align-items: center; justify-content: space-between; }
+.project-name { margin-right: 30px; line-height: 1.2; }
 .project-link { color: $primary; @include title(inherit, inherit, inherit); position: relative; border:none; }
 .project-link span { font-size: .8rem; @include hover(.3s); }
 .project-link:hover { text-decoration: none; }
@@ -41,7 +80,7 @@ header { margin-top: 2.25rem; margin-bottom: 1.25rem; }
 // Blog Index
 .index-title { margin-top: 1rem; font-size: 1.2rem; }
 .index-posts .post-meta { margin-top: 5px; }
-.index-post { margin: 0 0 2rem 0; }
+.index-post { margin: 0 0 15px 0; }
 .index-post-title { @include main-title; font-size: 1.2rem; line-height: 1.2; }
 .index-post-link { color: $primary; border: none; }
 .index-read-more { margin-top: 5px; }
@@ -86,7 +125,7 @@ blockquote > :last-child { margin-bottom: 0; }
 }
 
 // Footer
-footer { margin-bottom: 1.25rem; }
+footer { max-width: 650px; margin: 0 auto 0 auto; }
 .elsewhere { color: $darkgrey; margin-bottom: 1rem; }
 .social-links { line-height: $ratio*1.125; }
 .social-link { @include corpus($default, italic, $corpus-size); }

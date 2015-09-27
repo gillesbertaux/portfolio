@@ -5,15 +5,15 @@
 /**** HELPERS ****/
 
 $big: 1.5rem;
-$tall: 1.3rem;
+$tall: 1rem;
 $middle: 1.2rem;
 $default: 1rem;
-$small: .9rem;
+$small: .875rem;
 $verysmall: .7rem;
 
 $title-size: $big;
 $subtitle-size: $tall;
-$corpus-size: $default;
+$corpus-size: $small;
 $link-size: $small;
 
 $bold: 700;
@@ -25,7 +25,7 @@ $main-font: 'Open Sans', sans-serif;
 $secondary-font: 'Lato', sans-serif;
 
 @mixin title($weight, $style, $size) { font-family: $secondary-font; font-weight: $weight; font-style: $style; font-size: $size; line-height: 1.2; }
-@mixin corpus($weight, $style, $size) { font-family: $main-font; font-weight: $weight; font-style: normal; font-size: $size; line-height: 1.8; }
+@mixin corpus($weight, $style, $size) { font-family: $main-font; font-weight: $weight; font-style: normal; font-size: $size; line-height: 2; }
 
 @mixin main-title { @include title($bold, normal, $title-size); }
 @mixin sub-title { @include title($bold, normal, $subtitle-size); }
@@ -35,7 +35,7 @@ $secondary-font: 'Lato', sans-serif;
 
 /**** GLOBAL TYPOGRAPHY ****/
 
-h1 { @include main-title; }
+h1 { @include main-title; margin-bottom: 21px; }
 h2 { @include corpus-italic; }
 .post-content h2 { @include sub-title; }
 h3 { @include sub-title; }

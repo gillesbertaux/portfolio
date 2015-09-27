@@ -2,18 +2,19 @@
    COLORS
    ========================================================================== */
 
-$salmon: #db6565;
-$darkgrey: #444;
-$grey: #ccc;
-$lightgrey: #bbb;
-$verylightgrey: #f0f0f0;
+$blue: #3CA8DB;
+$darkgrey: #222;
+$grey: #8C9196;
+$lightgrey: #eee;
+$verylightgrey: #fdfdfd;
 
 $primary: $darkgrey;
-$secondary: $salmon;
-$tertiary: $lightgrey;
+$secondary: $blue;
+$tertiary: $grey;
 
 /**** GLOBAL RULES ****/
 
-h1, h2, p, li { color: $primary; }
+h1, h2 { color: $primary; }
+p, li { color: $tertiary; }
 a { color: $secondary; }
 a:hover { text-decoration: underline; }

@@ -3,9 +3,11 @@
 {% include head-blog.html %}
 <body> 
 
-  <div class="progressbar"></div>
+  <div class="announcement">
+    <p>Currently, I'm available for freelance as a marketing consultant or designer. <a href="mailto:hello@gillesbertaux.com?subject=[Project]%20-%20Hi%20Gilles">Have a project?</a></p>
+  </div>
 
-  <div class="wrapper">
+  <div class="wrapper wrapper--post">
 
   	<header class="post-header">
       <p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">Back to all posts</a></p> 
@@ -19,22 +21,6 @@
 
     <div id="disqus_thread" class="post-comments"></div>
 
-  </div>
-
-  <div class="post-fixed-footer">
-    <div class="post-fixed-footer-left">
-      {% if page.previous %} 
-      <a class="post-next" title="{{ page.previous.title }}" href="{{ page.previous.url }}">Previous post</a>
-      {% endif %} 
-    </div>
-    <div class="post-fixed-footer-center">
-      <span class="post-share-text">Thanks for reading! </span><a class="post-share-link" target="_blank" href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=gillesbertaux" onclick="ga('send', 'event', 'link-twitter', 'click', 'shared on twitter' {'page': '{{ page.url }}'});">Share it on Twitter</a><span class="post-share-text"> and let me know what you think ;)</span>
-    </div>
-    <div class="post-fixed-footer-right">
-      {% if page.next %} 
-      <a class="post-next" title="{{ page.next.title }}" href="{{ page.next.url }}">Next post</a>
-      {% endif %} 
-    </div>
   </div>
   
   <img style="display:none;height:1px;width:1px;position:absolute;" src="https://www.linkedin.com/profile/view?id=129538418" alt="linkedin profile">

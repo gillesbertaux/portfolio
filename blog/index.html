@@ -10,14 +10,14 @@ layout: default
 
 </header>
 
-<p class="sections"><strong>HERE ARE ALL MY BLOG POSTS</strong></p>
+<p class="sections sections--blog-index"><strong>HERE ARE ALL MY BLOG POSTS</strong></p>
 <hr class="top-sep">
 
 <section class="index-posts">
 	<ul>
 		{% for post in site.posts %}
 		<li class="index-post">
-			<h2 class="index-post-title"><a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} <span>&#10142;</span></a></h2>
+			<h2 class="index-post-title"><a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 			<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
 			<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 			<p class="index-read-more"><a title="{{ post.title }}" href="{{ post.url }}">Sounds interesting? Read more</a></p>

@@ -61,7 +61,7 @@ header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
 .desc-nav { @include corpus-normal; color: $grey; margin-right: 15px; }
 
 @media screen and (max-width:$phone) { 
-	.desc-nav { display: none; }
+	.desc-nav, .main-nav-btn { display: none; }
 }
 
 // Projects

@@ -40,6 +40,30 @@ header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
 }
 .announcement p { margin: 0; }
 
+// Nav
+.main-nav { 
+	display: flex; 
+	justify-content: space-between;
+	width: 90%;
+	max-width: 650px; 
+	margin: 0 auto 84px auto;
+	padding: 42px 0 21px 0;
+	background-color: #fff;
+	border-bottom: 1px solid $lightgrey;  
+}
+.link-nav { @include corpus-normal; color: $grey; margin-right: 15px; }
+.link-nav, .link-nav:hover { border: none; }
+.linknav--work:hover { color: #9013FE; }
+.linknav--open:hover { color: #5AD64E; }
+.linknav--talks:hover { color: #00DBAA; }
+.linknav--blog:hover { color: #FF0081; }
+.main-nav-btn { @include corpus-normal; padding: 5px 10px; border-radius: 40px; background-color: $blue; color: #fff; }
+.desc-nav { @include corpus-normal; color: $grey; margin-right: 15px; }
+
+@media screen and (max-width:$phone) { 
+	.desc-nav { display: none; }
+}
+
 // Projects
 .project-img { 
 	border: 5px solid #fff; 

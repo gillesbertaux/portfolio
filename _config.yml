@@ -12,3 +12,6 @@ markdown: kramdown
 sass:
     sass_dir: _sass
     style: :compressed
+gems:
+  - octopress-minify-html
+minify_html: true

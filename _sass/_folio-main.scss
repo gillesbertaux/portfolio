@@ -53,6 +53,7 @@ header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
 }
 .link-nav { @include corpus-normal; color: $grey; margin-right: 15px; }
 .link-nav, .link-nav:hover { border: none; }
+.linknav--about:hover { color: $darkgrey; }
 .linknav--work:hover { color: #9013FE; }
 .linknav--open:hover { color: #5AD64E; }
 .linknav--talks:hover { color: #00DBAA; }

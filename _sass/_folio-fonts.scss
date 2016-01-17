@@ -37,7 +37,7 @@ $secondary-font: 'Lato', sans-serif;
 
 h1 { @include main-title; margin-bottom: 21px; }
 h2 { @include corpus-italic; }
-.post-content h2 { @include sub-title; }
+.post-content h2 { @include sub-title; font-size: $big; }
 h3 { @include sub-title; }
 p  { @include corpus-normal; }
 a, a:hover { text-decoration: none; }

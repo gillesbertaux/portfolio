@@ -6,7 +6,7 @@ $(document).ready(function() {
 		$(".progressbar").css("width", barPercentage + "%");
 	});
 	var origTitle = $(document).find("title").text();
-	var newTitle = "Don't forget me :)";
+	var newTitle = "See Rumble.live!";
 	function setTitle( t ){
 		document.title = t;
 	}
@@ -15,7 +15,7 @@ $(document).ready(function() {
 	});
 	$(window).on("blur", function(){
 		setTitle( newTitle );
-	});	
+	});
 });
 
 $(function() {

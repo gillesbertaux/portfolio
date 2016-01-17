@@ -1,1 +1,129 @@
-<!DOCTYPE HTML><html lang="en"><head><meta charset="UTF-8"><title>Gilles Bertaux : Product Design + Growth | How to Prevent Gmail App From Autoscaling HTML Emails</title><meta name="google-site-verification" content="dP8o9sKNCibdnxzpaDA0blhIHptcacqhvKiVzYIdGME"/><meta name="description" content="Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout."><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta property='og:locale' content='fr_FR'/><meta property='og:title' content='Gilles Bertaux : Product Design + Growth | How to Prevent Gmail App From Autoscaling HTML Emails'/><meta property='og:description' content="Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout."/><meta property='og:url' content='http://gillesbertaux.com'/><meta property='og:site_name' content='Gilles Bertaux : Product Design + Growth'/><meta property='og:type' content='website'/><meta property='og:image' content="http://www.gillesbertaux.com/img/me.png"/><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@gillesbertaux"><meta name="twitter:title" content="Gilles Bertaux : Product Design + Growth | How to Prevent Gmail App From Autoscaling HTML Emails"><meta name="twitter:description" content="Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout."><meta name="twitter:creator" content="@gillesbertaux"><meta name="twitter:image:src" content="http://www.gillesbertaux.com/img/me.png"><meta name="twitter:domain" content="http://gillesbertaux.com"><link rel="profile" href="http://gmpg.org/xfn/11"/><link rel="author" href="https://plus.google.com/u/0/+GillesBertaux/"/><link rel="icon" href="/img/favicon.ico" type="image/x-icon"/><link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'><link rel="stylesheet" type="text/css" href="/css/main.css"></head><body><div class="announcement"><p>Currently, I'm available for freelance as a marketing consultant or designer. <a href="mailto:hello@gillesbertaux.com?subject=[Project]%20-%20Hi%20Gilles">Have a project?</a></p></div><div class="wrapper wrapper--post"><header class="post-header"><p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">Back to all posts</a></p><h1 class="post-title">How to Prevent Gmail App From Autoscaling HTML Emails</h1><p class="post-meta">Published on Apr 18, 2015</span></p> </header> <article class="post-content"><p>Emails clients are terrible at doing their job. Especially Gmail and, obviously Outlook. Recently, I had this very frustrating experience: we had a HTML emails, optimized for desktop email clients BUT the Gmail app on iOS and Android were autoscaling the typography by 50% breaking the whole layout. After some research, I finally found a hack to solve this.</p><p>But let me first list all of the potential solutions that I tried. Maybe those will fix your problem:</p><ul><li>Add a table row width a single cell set to your email width.</li><li>Add <em>meta name=”viewport” content=”width=device-width, initial-scale=1”</em> and then set an image (can be a 1px image) that spans the full width of the page.</li><li>Add add min-width to your background/container table.</li><li>Add <em>&lt;body style="-webkit-text-size-adjust:none;"&gt;</em></li></ul><p>That might solve your problem on Android. But, for me, at least, the problem was persisting on the Gmail iOS app. Until I found a hack on a blog called <a href="http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/">Freshinbox</a>.</p><p>And finally here’s the hack, put this code at the bottom of your email above the closing body tag:</p><p><code>&lt;div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff;"&gt; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - &lt;/div&gt;</code></p><p>Here’s the explanation:</p><blockquote><p>The white-space:nowrap with the dashed line creates a line about 500px across that when bumped up in size will exceed 700px causing the Gmail app to not apply the font change.</p><p>The display:none style causes non-Gmail clients to hide the block (Gmail ignores display:none). When the email is viewed in say, a non-Gmail mobile client, it won’t affect your responsive layout.</p><p>The font is set to white so the dashes are not displayed when viewed in Gmail. If you have a different color background, set it to your background color.</p></blockquote><p>Hope this helps ;)</p><p>Btw: I’m working on a template for bootstrapping scalable newsletter optimized for all email clients called Mailstrap, <a href="https://github.com/gillesbertaux/mailstrap">here’s the github</a>, you are more than welcome to fork it or leave a comment!</p></article><div id="disqus_thread" class="post-comments"></div></div> <script src='/js/min/main-min.js'></script><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-27077783-5","auto"),ga("send","pageview")</script><script>var disqus_shortname="gillesbertaux";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></body></html>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gilles Bertaux : Co-founder/CEO Rumble | How to Prevent Gmail App From Autoscaling HTML Emails</title>
+	<meta name="google-site-verification" content="dP8o9sKNCibdnxzpaDA0blhIHptcacqhvKiVzYIdGME" />
+	
+	
+	<meta name="description" content="Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout.">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+	<meta property='og:locale' content='fr_FR'/>
+	<meta property='og:title' content='Gilles Bertaux : Co-founder/CEO Rumble | How to Prevent Gmail App From Autoscaling HTML Emails'/>
+	
+	<meta property='og:description' content="Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout."/>
+	
+	<meta property='og:url' content='http://gillesbertaux.com'/>
+	<meta property='og:site_name' content='Gilles Bertaux : Co-founder/CEO Rumble'/>
+	<meta property='og:type' content='website'/>
+	<meta property='og:image' content="http://www.gillesbertaux.com/img/me.png"/>
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@gillesbertaux">
+	<meta name="twitter:title" content="Gilles Bertaux : Co-founder/CEO Rumble | How to Prevent Gmail App From Autoscaling HTML Emails">
+	
+	<meta name="twitter:description" content="Here's a hack to prevent the Gmail app on iOS and Android from autoscaling the typography by 50% and breaking the whole layout.">
+	
+	<meta name="twitter:creator" content="@gillesbertaux">
+	<meta name="twitter:image:src" content="http://www.gillesbertaux.com/img/me.png">
+	<meta name="twitter:domain" content="http://gillesbertaux.com">
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="author" href="https://plus.google.com/u/0/+GillesBertaux/" />
+	<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body> 
+
+  <nav class="main-nav">
+    <div>
+      <a class="link-nav linknav--about"href="/">About</a>
+      <a class="link-nav linknav--work"href="/#work">Work</a>
+      <a class="link-nav linknav--open"href="/#open">Open</a>
+      <a class="link-nav linknav--talks"href="/#talks">Talks</a>
+      <a class="link-nav linknav--blog"href="/blog">Blog</a>
+    </div>
+    <div>
+      <span class="desc-nav">Available for freelance</span>
+      <a class="main-nav-btn" href="mailto:hello@gillesbertaux.com?subject=[Project]%20-%20Hi%20Gilles">Hire me</a>
+    </div>
+  </nav>
+
+  <div class="wrapper wrapper--post">
+
+  	<header class="post-header">
+      <p class="post-nav"><a title="back to posts" href="http://gillesbertaux.com/blog">Back to all posts</a></p> 
+	    <h1 class="post-title">How to Prevent Gmail App From Autoscaling HTML Emails</h1>
+      <p class="post-meta">Published on Apr 18, 2015</span></p>
+  	</header>
+    
+    <article class="post-content">
+    <p>Emails clients are terrible at doing their job. Especially Gmail and, obviously Outlook. Recently, I had this very frustrating experience: we had a HTML emails, optimized for desktop email clients BUT the Gmail app on iOS and Android were autoscaling the typography by 50% breaking the whole layout. After some research, I finally found a hack to solve this.</p>
+
+<p>But let me first list all of the potential solutions that I tried. Maybe those will fix your problem:</p>
+
+<ul>
+  <li>Add a table row width a single cell set to your email width.</li>
+  <li>Add  <em>meta name=”viewport” content=”width=device-width, initial-scale=1”</em> and then set an image (can be a 1px image) that spans the full width of the page.</li>
+  <li>Add add min-width to your background/container table.</li>
+  <li>Add <em>&lt;body style="-webkit-text-size-adjust:none;"&gt;</em></li>
+</ul>
+
+<p>That might solve your problem on Android. But, for me, at least, the problem was persisting on the Gmail iOS app. Until I found a hack on a blog called <a href="http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/">Freshinbox</a>.</p>
+
+<p>And finally here’s the hack, put this code at the bottom of your email above the closing body tag:</p>
+
+<p><code class="highlighter-rouge">&lt;div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff;"&gt;
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+&lt;/div&gt;</code></p>
+
+<p>Here’s the explanation:</p>
+
+<blockquote>
+  <p>The white-space:nowrap with the dashed line creates a line about 500px across that when bumped up in size will exceed 700px causing the Gmail app to not apply the font change.</p>
+
+  <p>The display:none style causes non-Gmail clients to hide the block (Gmail ignores display:none). When the email is viewed in say, a non-Gmail mobile client, it won’t affect your responsive layout.</p>
+
+  <p>The font is set to white so the dashes are not displayed when viewed in Gmail. If you have a different color background, set it to your background color.</p>
+</blockquote>
+
+<p>Hope this helps ;)</p>
+
+<p>Btw: I’m working on a template for bootstrapping scalable newsletter optimized for all email clients called Mailstrap, <a href="https://github.com/gillesbertaux/mailstrap">here’s the github</a>, you are more than welcome to fork it or leave a comment!</p>
+
+  	</article>
+
+    <div id="disqus_thread" class="post-comments"></div>
+
+  </div>
+  
+  <script src='/js/min/main-min.js'></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-27077783-5', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'gillesbertaux';
+      
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</body>
+</html>
+

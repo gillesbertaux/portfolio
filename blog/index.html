@@ -4,7 +4,6 @@ layout: default
 
 <header>
 	
-	<p class="post-nav"><a title="back home" href="http://gillesbertaux.com/">About me</a></p> 
 	<h1 class="index-title">I (try to) write about Products, Design & Startups</h1>
 	<p>Hi there, this my blog section, thanks for passing by! Nothing fancy here, just opinions and personal tips from my own experiments on very different topics but mostly around startups and products. Want to subscribe? Here's the <a href="http://gillesbertaux.com/feed.xml">XML feed</a>.</p>
 
@@ -19,7 +18,7 @@ layout: default
 		<li class="index-post">
 			<h2 class="index-post-title"><a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 			<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-			<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+			<p>{{ post.description }}</p>
 			<p class="index-read-more"><a title="{{ post.title }}" href="{{ post.url }}">Sounds interesting? Read more</a></p>
 		</li>
 		{% endfor %}

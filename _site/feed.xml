@@ -1,13 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gilles Bertaux : Product Design + Growth</title>
-    <description>Hi there, my name is Gilles Bertaux. Formerly Product Designer at TOTEMS, now Growth at Mention. I do: Product Management, Product Design &amp; Growth.</description>
+    <title>Gilles Bertaux : Co-founder/CEO Rumble</title>
+    <description>My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
     <link>http://gillesbertaux.com/</link>
     <atom:link href="http://gillesbertaux.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Oct 2015 12:41:11 +0200</pubDate>
-    <lastBuildDate>Sun, 04 Oct 2015 12:41:11 +0200</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Sun, 17 Jan 2016 16:12:23 +0100</pubDate>
+    <lastBuildDate>Sun, 17 Jan 2016 16:12:23 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>My SaaS Startup Dream Stack - Part one: Marketing</title>
+        <description>&lt;p&gt;I just wanted to quickly list of all the SaaS tools I would love to use if the resources were limitless.&lt;/p&gt;
+
+&lt;p&gt;This is the first part of several posts in which you’ll find a variety of tools in every field whereas it is  marketing, tech, design or even operations (HR, admin, etc.).&lt;/p&gt;
+
+&lt;p&gt;So, the marketing stack, that’s an easy one. During my last year at Mention I learned to use almost a dozen new marketing tools, and maybe tested twice as many, so I have pretty good idea of what tools could fit my needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;for-data-collection-segment&quot;&gt;For data collection: Segment&lt;/h3&gt;
+
+&lt;p&gt;I discovered &lt;a href=&quot;//segment.com&quot;&gt;Segment&lt;/a&gt; with Mention and I will probably bring it with me in every company willing to hire me from now on. Segment is just incredibly powerful.&lt;/p&gt;
+
+&lt;p&gt;Briefly, Segment is a « data hub »: it provides an API to push front-end or server-side standardized events from your app to their service and then to any software that has a Segment integration (+100 integrations).&lt;/p&gt;
+
+&lt;p&gt;For example, if you send an « Upgrade » event to Segment, you’ll be able to find it on your analytics tool, emailing software, CRM or even Twitter Ads, Facebook Conversions or Google Adwords.&lt;/p&gt;
+
+&lt;p&gt;One tool to find them, One tool to track them all and in the darkness bind them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/segment.png&quot; alt=&quot;Segment&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-analytics-amplitude&quot;&gt;For analytics: Amplitude&lt;/h3&gt;
+
+&lt;p&gt;I tested some analytics tools outside of the good ol’ Google Analytics and the one I enjoyed the most was &lt;a href=&quot;//amplitude.com&quot;&gt;Amplitude&lt;/a&gt;. It provides cool features such as funnels, events segmentation, user search, custom dashboards and the ability to cross your data with user properties. It even allows SQL commands on your data (only available for big ass premium plans).&lt;/p&gt;
+
+&lt;p&gt;Another cool option is &lt;a href=&quot;//kissmetrics.com&quot;&gt;Kissmetrics&lt;/a&gt;. It is very reliable with Segment, awesome power reports, but the learning curve is a bit high.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/amplitude.png&quot; alt=&quot;Amplitude&quot; /&gt;
+&lt;em&gt;The real-time map of events in Amplitude&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-mailing-customerio--mailchimp&quot;&gt;For mailing: Customer.io (&amp;amp; Mailchimp)&lt;/h3&gt;
+
+&lt;p&gt;By mailing I distinguish two things: automatic nurturing/transactional emails and blog newsletters.&lt;/p&gt;
+
+&lt;p&gt;I met &lt;a href=&quot;//customer.io&quot;&gt;Customer.io&lt;/a&gt; two years ago and I would never change for any other solution now. Customer.io is to me the best emailing solution out there because of its customization capability. Because of its &lt;a href=&quot;https://github.com/Shopify/liquid/wiki/Liquid-for-Designers&quot;&gt;Liquid&lt;/a&gt; syntax inside the emails templates you can so awesome stuff like:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;{ if customer.plan_value.size &amp;gt; 0 and customer.plan_value &amp;gt; 200 % and customer.app_rating &amp;lt; 6 }
+Hello !&lt;/p&gt;
+
+  &lt;p&gt;My name is , I am your account manager on your  plan. I saw that yesterday you gave us a rating of , I am terribly sorry you had such a bad experience. What were your pain points? Can we make a one-on-one Skype so that you can show me what is wrong ? I will do my best to help you.&lt;/p&gt;
+
+  &lt;p&gt;Have a great day,&lt;/p&gt;
+
+  &lt;p&gt;{ else }
+{ endif }&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This. is. power. And it has a Segment integration.&lt;/p&gt;
+
+&lt;p&gt;As for Mailchimp, I think it is simplest tool for every member of your team: it does not take long to master, it has a lot of cool testing tools, it offers many integrations, and the custom form implementation is insanely easy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//customer.io/img/cio-app-screenshot-dashboard-v3-0bb9c7ed.png&quot; alt=&quot;cio&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-crm--customer-success-depends&quot;&gt;For CRM &amp;amp; Customer Success: Depends…&lt;/h3&gt;
+
+&lt;p&gt;Well, here I’m not really sure. I believe there is a CRM for every stage of a company.&lt;/p&gt;
+
+&lt;p&gt;For example, an early-stage startup will be satisfied with a basic Streak gmail add-on or &lt;a href=&quot;//frontapp.com&quot;&gt;Front&lt;/a&gt; (not a CRM tool I know) for both sales and CS.&lt;/p&gt;
+
+&lt;p&gt;Then maybe switching sales to &lt;a href=&quot;//close.io&quot;&gt;Close.io&lt;/a&gt; or &lt;a href=&quot;//pipedrive.com&quot;&gt;Pipedrive&lt;/a&gt; would be a good idea. Finally once you reached a certain size and struggle with hundreds of leads you’ll want to switch your sales team to Salesforce.&lt;/p&gt;
+
+&lt;p&gt;As for CS, once you have a proper CS team, moving to simple tools such as &lt;a href=&quot;//zendesk.com&quot;&gt;Zendesk&lt;/a&gt; or &lt;a href=&quot;//totango.com&quot;&gt;Totango&lt;/a&gt; (Segment integrations \o/).&lt;/p&gt;
+
+&lt;p&gt;To sum up:
+- Early stage: Streak + Front
+- Startup: Close.io + Zendesk
+- Company: Salesforce&lt;/p&gt;
+
+&lt;h3 id=&quot;for-live-chat-chatlio&quot;&gt;For live chat: Chatlio&lt;/h3&gt;
+
+&lt;p&gt;Not very well known, this small startup has an awesome team and their product is top notch. &lt;a href=&quot;//chatlio.com&quot;&gt;Chatlio&lt;/a&gt; is the only live chat tool that integrates directly with Slack. So basically, you get a new cool chat without leaving the one you already use.&lt;/p&gt;
+
+&lt;p&gt;It could get easily messy, but in the end everything work like a charm, and I would not change it for another similar tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://chatlio.com/img/public/no-extra-tabs-slack-embed-widget-live.4d70399c.png&quot; alt=&quot;chatlio&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-analyzing-user-behaviors-fullstory&quot;&gt;For analyzing user behaviors: Fullstory&lt;/h3&gt;
+
+&lt;p&gt;Now, this is some heavy sorcery. &lt;a href=&quot;//fullstory.com&quot;&gt;Fullstory&lt;/a&gt; « records » every single users on your app and even keep track of the logs in the console. It means that you can bring the popcorn, sit back, and watch your users struggling with your brand new signup form. As they say: it’s a DVR (a what?) for your website.&lt;/p&gt;
+
+&lt;p&gt;It is indeed very useful to get full insights on why X users are behaving this way or why did they get a form error. Actually Fullstory could be useful not just marketers but also for product managers or even UX designers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.fullstory.com/s/img/web-feature-notes-tall.png&quot; alt=&quot;fullstory&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;So here it is, I might be updating this post a little bit with SEO tools such as Moz or BI/Dashboard softwares. Let me know what you think in the comments.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 +0200</pubDate>
+        <link>http://gillesbertaux.com/blog/my-startup-dream-stack-marketing-tools/</link>
+        <guid isPermaLink="true">http://gillesbertaux.com/blog/my-startup-dream-stack-marketing-tools/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Tubelist.co: How to launch a MVP in less than 14 days?</title>
+        <description>&lt;p&gt;Personnaly I spend way more time watching Youtube on my AppleTV than watching TV. Not only Youtube brought tailored, customized content to everyone but it has also incentivated like never before content creation.&lt;/p&gt;
+
+&lt;p&gt;Yet, unlike traditional media (TV industry and movie industry included), we, as users, do not have a good way to explore, discover content and get inspired on Youtube… outside of Youtube.&lt;/p&gt;
+
+&lt;p&gt;This is where Tubelist comes in. TubeList is a new way to explore and discover new Youtube channels everyday and upvote the ones you like. Think of it as a Product Hunt or a Reddit for Youtube channels. TubeList is also a cool way for youtubers to promote their channel, get more views and create more amazing content.&lt;/p&gt;
+
+&lt;p&gt;Tubelist is a side-project we launched with my teammate Vincent Garreau.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tubelist-1.png&quot; alt=&quot;tubelist home&quot; title=&quot;tubelist home&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;have-a-hackerproduct-fit&quot;&gt;1. Have a hacker/product fit&lt;/h2&gt;
+
+&lt;p&gt;We thought that it would be cool to have something we could use ourselves: a very simple tool to explore Youtube and get new content everyday. It was not hard to find people with the same needs, often on Twitter people were asking for channel suggestions to their followers.&lt;/p&gt;
+
+&lt;p&gt;Also, since Reddit, Product Hunt, or Hacker News were part of our daily curation routine, it seemed like the simplest way to present it that way.&lt;/p&gt;
+
+&lt;p&gt;It may sound silly or obvious, but having a real enthusiasm for the product we were building really boosted our productivity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tubelist-3.png&quot; alt=&quot;tubelist channel&quot; title=&quot;tubelist channel&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;get-out-of-the-building&quot;&gt;2. “Get out of the building”&lt;/h2&gt;
+
+&lt;p&gt;Luckily enough we knew three Youtubers, with very different profiles. Lucie Zevaco (@mezlulu) vlogs on beauty/fashion/lifestyle, Julien Dachaud (@newtiteuf) makes videos on Pokemon games and Thomas Iturralde (@Laink) produces awesome gaming/comedy videos. We reached out to those three in order to iterate more efficiently on our idea.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tubelist-4.png&quot; alt=&quot;tubelist channel bottom&quot; title=&quot;tubelist channel bottom&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;have-a-modular-approach&quot;&gt;3. Have a modular approach&lt;/h2&gt;
+
+&lt;p&gt;We relied on flexible yet strong technologies that could provide everything we wanted in no time with a minimal learning curve. This is why, after some hesitation with Rails, we eventually built TubeList architecture with basic PHP/MySQL and Kirby, a flat-file CMS, which provided just the flexibility we needed.&lt;/p&gt;
+
+&lt;p&gt;Then, to organize things, we basically listed all the features we wanted, translated them in user stories and splitted them in three modules “core features”, “release version”, “backlog”. This modular approach would drive our whole development process.&lt;/p&gt;
+
+&lt;p&gt;This very first iteration had minimal identity and CSS, we would take care of design later. Our concern was to have something functional. After the first week of development we had pretty much everything we wanted in terms of functionalities, it was time to get to the fun stuff : design and branding.&lt;/p&gt;
+
+&lt;p&gt;Rather than make pixel-perfect mockups, which is very consuming in time, we had the same modular approach for design. We decomposed our project in UI elements and crafted a UI kit directly in Sketch during the following week-end. This decision was also influenced by the fact it would be easier then to translate those UI elements in SASS and HTML components and then develop faster reusing those modules.&lt;/p&gt;
+
+&lt;p&gt;Also, in case you wonder, we mostly worked on remote through Slack, Trello and very few Google Documents to keep things very simple.&lt;/p&gt;
+
+&lt;h2 id=&quot;automate-development-and-growth&quot;&gt;4. Automate development and growth.&lt;/h2&gt;
+
+&lt;p&gt;In order to ship fast and keep a strong focus on our product, we had to find ways to easily automate our process as much as we could without building complex environments.&lt;/p&gt;
+
+&lt;p&gt;First, to ship code faster, we used a  Github + FTploy integration in which every push to the Master branch is a push to our FTP.&lt;/p&gt;
+
+&lt;p&gt;Then, to keep our partners informed on our progress, rather than sending emails everyday and spend hours in our inbox, we invited them to our Slack channel. Then we integrated our Trello changes + Github notifications with a public Slack channel called #notifications. That way people could track the progress in real time.&lt;/p&gt;
+
+&lt;p&gt;Concerning growth and content creation, we made a great use of Zapier, Google Spreadsheets, Kimono and the Augur.io API.&lt;/p&gt;
+
+&lt;p&gt;To create a DB of Youtubers to reach, we scraped SocialBlade Tops 500 with Kimono to get the Youtube channels IDs present in SocialBlade URLs, built new URLs pointing to their Youtube channels and import them to a spreadsheet. Then we visited every channel to see if there was a business email in their about section. We stopped at 100 leads. Now we are currently using Amazon Mechanical Turk to do that for us.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;So there it is, we hope you found it interesting! If you have any comment, any idea on how we could improve this process, leave us a comment we would love to hear it!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/tubelist-2.png&quot; alt=&quot;tubelist about&quot; title=&quot;tubelist about&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, we would like to thank the people who participated to this project: our friends, family and colleagues of course, but also Lucie Zevaco, Julien Dachaud, Thomas Iturralde, and thanks to Product Hunt and especially Ryan who agreed to highlight TubeList on Product Hunt, you are amazing!&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate>
+        <link>http://gillesbertaux.com/blog/tubelist-case-study/</link>
+        <guid isPermaLink="true">http://gillesbertaux.com/blog/tubelist-case-study/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Startup HR: Chief Culture Officer</title>
@@ -60,7 +223,7 @@
 
 &lt;p&gt;And finally here’s the hack, put this code at the bottom of your email above the closing body tag:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;&amp;lt;div style=&quot;display:none; white-space:nowrap; font:15px courier; color:#ffffff;&quot;&amp;gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div style=&quot;display:none; white-space:nowrap; font:15px courier; color:#ffffff;&quot;&amp;gt;
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 &amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/p&gt;
 

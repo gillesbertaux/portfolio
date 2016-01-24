@@ -5,8 +5,8 @@
     <description>My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
     <link>http://gillesbertaux.com/</link>
     <atom:link href="http://gillesbertaux.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jan 2016 16:12:23 +0100</pubDate>
-    <lastBuildDate>Sun, 17 Jan 2016 16:12:23 +0100</lastBuildDate>
+    <pubDate>Sun, 24 Jan 2016 18:07:02 +0100</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 18:07:02 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -202,48 +202,6 @@ Hello !&lt;/p&gt;
         <pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate>
         <link>http://gillesbertaux.com/blog/chief-culture-officer/</link>
         <guid isPermaLink="true">http://gillesbertaux.com/blog/chief-culture-officer/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>How to Prevent Gmail App From Autoscaling HTML Emails</title>
-        <description>&lt;p&gt;Emails clients are terrible at doing their job. Especially Gmail and, obviously Outlook. Recently, I had this very frustrating experience: we had a HTML emails, optimized for desktop email clients BUT the Gmail app on iOS and Android were autoscaling the typography by 50% breaking the whole layout. After some research, I finally found a hack to solve this.&lt;/p&gt;
-
-&lt;p&gt;But let me first list all of the potential solutions that I tried. Maybe those will fix your problem:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Add a table row width a single cell set to your email width.&lt;/li&gt;
-  &lt;li&gt;Add  &lt;em&gt;meta name=”viewport” content=”width=device-width, initial-scale=1”&lt;/em&gt; and then set an image (can be a 1px image) that spans the full width of the page.&lt;/li&gt;
-  &lt;li&gt;Add add min-width to your background/container table.&lt;/li&gt;
-  &lt;li&gt;Add &lt;em&gt;&amp;lt;body style=&quot;-webkit-text-size-adjust:none;&quot;&amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That might solve your problem on Android. But, for me, at least, the problem was persisting on the Gmail iOS app. Until I found a hack on a blog called &lt;a href=&quot;http://freshinbox.com/blog/gmail-on-ios-increases-font-size-on-some-emails/&quot;&gt;Freshinbox&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And finally here’s the hack, put this code at the bottom of your email above the closing body tag:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div style=&quot;display:none; white-space:nowrap; font:15px courier; color:#ffffff;&quot;&amp;gt;
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s the explanation:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The white-space:nowrap with the dashed line creates a line about 500px across that when bumped up in size will exceed 700px causing the Gmail app to not apply the font change.&lt;/p&gt;
-
-  &lt;p&gt;The display:none style causes non-Gmail clients to hide the block (Gmail ignores display:none). When the email is viewed in say, a non-Gmail mobile client, it won’t affect your responsive layout.&lt;/p&gt;
-
-  &lt;p&gt;The font is set to white so the dashes are not displayed when viewed in Gmail. If you have a different color background, set it to your background color.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Hope this helps ;)&lt;/p&gt;
-
-&lt;p&gt;Btw: I’m working on a template for bootstrapping scalable newsletter optimized for all email clients called Mailstrap, &lt;a href=&quot;https://github.com/gillesbertaux/mailstrap&quot;&gt;here’s the github&lt;/a&gt;, you are more than welcome to fork it or leave a comment!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 18 Apr 2015 00:00:00 +0200</pubDate>
-        <link>http://gillesbertaux.com/blog/gmail-autoscale-html-emails/</link>
-        <guid isPermaLink="true">http://gillesbertaux.com/blog/gmail-autoscale-html-emails/</guid>
         
         
       </item>

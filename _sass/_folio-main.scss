@@ -17,59 +17,15 @@ a { border-bottom: 1px solid rgba(60,168,219,.1); }
 a:hover { border-bottom-color: $blue; }
 
 hr { display: block; width: 100%; border: 0; }
-.sep { margin: 2rem auto 2rem; border: 0; border-bottom: 1px solid $lightgrey; }
 .top-sep {
   max-width: 650px;
-  margin: 15px auto 42px auto;
+  margin: 15px auto;
   border-bottom: 1px solid $lightgrey;
 }
+
+// Global Wrapper
 .wrapper { width: 90%; margin: 0 auto; }
-.main-section, .presentation { max-width: 650px; margin: 0 auto 84px auto; }
-.presentation h2 {
-  font-size: $small;
-  color: $darkgrey;
-  font-weight: 600;
-  margin-top: 42px;
-}
-
 @media screen and (min-width:$phone) { .wrapper { width: 100%; } }
-
-header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
-
-.sections {
-  font-size: $small;
-  display: flex;
-  max-width: 650px;
-  margin: 0 auto 0 auto;
-  color: $grey;
-  align-items: center;
-}
-.sections p { margin: 0; color: #9013FE; }
-.sections img { margin-right: 10px; height: 24px; }
-.sections--work { color: #9013FE; }
-.sections--open { color: #5AD64E; }
-.sections--talks { color: #00DBAA; }
-.sections--blog, .sections--blog-index { color: #FF0081; }
-
-// Last notes
-.last-notes {
-  margin-top: 42px;
-  padding: 21px;
-  text-align: center;
-  border-top: 1px solid $verylightgrey;
-}
-.last-notes { color: $grey; }
-.last-notes a { color: $darkgrey; border: none; }
-
-// Announcement
-.announcement {
-	padding: 21px;
-	text-align: center;
-	background-color: $verylightgrey;
-	border-bottom: 1px solid $lightgrey;
-	margin-bottom: 84px;
-}
-.announcement p { margin: 0; }
 
 // Nav
 .main-nav {
@@ -103,68 +59,53 @@ header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
 	.desc-nav, .main-nav-btn { display: none; }
 }
 
-// Projects
-.project-img {
-	border: 5px solid #fff;
-	border-radius: 100%;
-	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.5);
-	margin-right: 30px;
-	width: 84px;
-	height: auto;
-}
-.skill {
-	padding: 3px 10px;
-	background: $verylightgrey;
-	@include radius(2px);
-	color: rgba(0,0,0,.3);
-	font-size: 12px;
-	font-family: $secondary-font;
-	font-weight: $bold;
-	margin-right: 15px;
-}
-.featured-icon { border: none; }
-.featured-icon img { height: 24px; width: auto; }
-.featured-icon--medium img { height: 16px; }
+// Sections
+header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
 
-.project-header {
+.main-section,
+.presentation {
+  max-width: 650px; margin: 0 auto 42px auto;
+  & h2 {
+    font-size: $small;
+    color: $darkgrey;
+    font-weight: 600;
+    margin-top: 42px;
+  }
+}
+
+.sections {
+  font-size: $small;
   display: flex;
+  max-width: 650px;
+  margin: 0 auto 0 auto;
+  color: $grey;
   align-items: center;
-  justify-content: flex-start;
+  & p {
+    margin: 0;
+    color: #9013FE;
+  }
+  & img {
+    margin-right: 10px;
+    height: 24px;
+  }
 }
 
-.project { display: flex; align-items: center; justify-content: space-between; }
-.project-name { margin-right: 30px; line-height: 1.2; }
+.sections--work { color: #9013FE; }
+.sections--open { color: #5AD64E; }
+.sections--talks { color: #00DBAA; }
+.sections--blog, .sections--blog-index { color: #FF0081; }
 
-.project-link {
-  position: relative;
-  color: $primary;
-  border: none;
-  @include title(inherit, inherit, inherit);
-}
-
-.project-link span { font-size: .8rem; @include hover(.3s); }
-.project-link:hover { text-decoration: none; }
-.project-link:hover span { margin-left: 3px; @include hover(.3s); }
-.project-link span { font-size: $verysmall; @include hover(.3s); }
-.talks-link p { display: inline; }
-.talks-link:before { content: "•  "; color: $grey; @include hover(.3s) }
-.talks-link:hover::before { color: $darkgrey; @include hover(.3s) }
-
-@media screen and (max-width:$phone) {
-	.project-live:before, .skill { display: none; }
-}
+// Projects
+.projects { line-height: $ratio*1.125; }
+.project { @include corpus($default, italic, $corpus-size); }
+.project:before { content: "•  "; color: $grey; @include hover(.3s) }
+.project:hover::before { color: $darkgrey; @include hover(.3s) }
 
 // Blog Index
-.index-title { margin-top: 1rem; font-size: 1.2rem; }
-.index-posts .post-meta { margin-top: 5px; }
-.index-post { margin: 0 auto 60px auto; max-width: 650px; }
-.index-post-title { @include main-title; font-size: 1rem; line-height: 1.2; }
-.index-post-link { color: $primary; border: none; }
-.index-read-more { margin-top: 5px; }
-.index-post-link span { font-size: .8rem; @include hover(.3s); }
-.index-post-link:hover { text-decoration: none; }
-.index-post-link:hover span { margin-left: 3px; @include hover(.3s); }
 .sections--blog-index { margin-top: 84px; }
+.index-post { @include corpus($default, italic, $corpus-size); }
+.index-post:before { content: "•  "; color: $grey; @include hover(.3s) }
+.index-post:hover::before { color: $darkgrey; @include hover(.3s) }
 
 // Blog Post
 .wrapper--post { max-width: 650px; margin-right: auto; margin-left: auto; }
@@ -239,3 +180,13 @@ footer { max-width: 650px; margin: 0 auto 0 auto; }
 .social-link { @include corpus($default, italic, $corpus-size); }
 .social-link:before { content: "•  "; color: $grey; @include hover(.3s) }
 .social-link:hover::before { color: $darkgrey; @include hover(.3s) }
+
+// Last notes on footer
+.last-notes {
+  margin-top: 42px;
+  padding: 21px;
+  text-align: center;
+  border-top: 1px solid $verylightgrey;
+}
+.last-notes { color: $grey; }
+.last-notes a { color: $darkgrey; border: none; }

@@ -4,7 +4,7 @@
 
 /**** HELPERS ****/
 
-$big: 1.5rem;
+$big: 1.2rem;
 $tall: 1rem;
 $middle: 1.2rem;
 $default: 1rem;
@@ -41,4 +41,3 @@ h2 { @include corpus-italic; }
 h3 { @include sub-title; }
 p  { @include corpus-normal; }
 a, a:hover { text-decoration: none; }
-

@@ -1,15 +1,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{ site.title }} | {{ page.title }}</title>
+
+	<!-- General Metas -->
 	<meta name="google-site-verification" content="dP8o9sKNCibdnxzpaDA0blhIHptcacqhvKiVzYIdGME" />
-	
+	{% if page.lang %}
+	<meta name="language" content="{{page.lang}}">
+	{% endif %}
+	<meta name="author" content="Gilles Bertaux, hello@gillesbertaux.com">
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
 	{% endif %}
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<!-- Apple Metas -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-title" content="Gilles Bertaux">
+	<meta name="apple-touch-fullscreen" content="yes">
+
+	<!-- Facebook Metas -->
 	<meta property='og:locale' content='fr_FR'/>
 	<meta property='og:title' content='{{ site.title }} | {{ page.title }}'/>
 	{% if page.description %}
@@ -18,8 +29,13 @@
 	<meta property='og:url' content='{{ site.url }}'/>
 	<meta property='og:site_name' content='{{ site.title }}'/>
 	<meta property='og:type' content='website'/>
-	<meta property='og:image' content="http://www.gillesbertaux.com/img/me.png"/>
-	
+	{% if page.cover %}
+	<meta property='og:image' content="{{page.cover}}" />
+	{% else %}
+	<meta property='og:image' content="http://www.gillesbertaux.com/img/gradient.jpg" />
+	{% endif %}
+
+	<!-- Twitter Metas -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@{{ site.twitter_username }}">
 	<meta name="twitter:title" content="{{ site.title }} | {{ page.title }}">
@@ -27,10 +43,27 @@
 	<meta name="twitter:description" content="{{ page.description }}">
 	{% endif %}
 	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
-	<meta name="twitter:image:src" content="http://www.gillesbertaux.com/img/me.png">
+	{% if page.cover %}
+	<meta property='twitter:image:src' content="{{page.cover}}" />
+	{% else %}
+	<meta name="twitter:image:src" content="http://www.gillesbertaux.com/img/gradient.jpg">
+	{% endif %}
 	<meta name="twitter:domain" content="{{ site.url }}">
-	
+
+	<!-- Google / Schema -->
+	<meta itemprop="name" content="{{page.title}}">
+	{% if page.description %}
+	<meta itemprop="description" content="{{page.description}}">
+	{% endif %}
+
+	<!-- IE -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+
+	<!-- Links -->
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="canonical" href="{{page.url}}">
 	<link rel="author" href="https://plus.google.com/u/0/+GillesBertaux/" />
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>

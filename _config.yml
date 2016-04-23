@@ -13,6 +13,4 @@ sass:
     sass_dir: _sass
     style: :compressed
 gems:
-  - octopress-minify-html
   - octopress-autoprefixer
-minify_html: true

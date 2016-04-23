@@ -33,7 +33,7 @@ hr { display: block; width: 100%; border: 0; }
 	justify-content: space-between;
 	width: 90%;
 	max-width: 650px;
-	margin: 0 auto 84px auto;
+	margin: 0 auto 42px auto;
 	padding: 42px 0 21px 0;
 	background-color: #fff;
 	border-bottom: 1px solid $lightgrey;
@@ -106,16 +106,33 @@ header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
 .index-post { @include corpus($default, italic, $corpus-size); }
 .index-post:before { content: "•  "; color: $grey; @include hover(.3s) }
 .index-post:hover::before { color: $darkgrey; @include hover(.3s) }
+.new-post {    
+  padding: 3px 5px;
+  background: #EEE;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: rgba(0,0,0,.4);
+  @include hover(.3s)
+}
+
+.index-post:hover > .new-post {
+  color: rgba(0,0,0,.6);
+  @include hover(.3s)
+}
 
 // Blog Post
 .wrapper--post { max-width: 650px; margin-right: auto; margin-left: auto; }
 pre,
 code {
   font-size: $default;
-  border: 1px solid $grey;
+  color: $red;
   background-color: $verylightgrey; @include radius(3px);
+  padding: 0px 5px; 
+  display: inline-block; 
+  margin: 2px 0;
 }
-code { padding: 1px 5px; display: block; }
 pre { padding: 8px 12px; overflow-x: scroll; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-header { margin: 0; text-align: left; }
@@ -148,10 +165,10 @@ blockquote > :last-child { margin-bottom: 0; }
 .post-content h2,
 .post-content h3 { margin-top: 1.5rem; }
 .post-content img { width: 100%; height: auto; margin: 21px 0; }
-.post-content ul { padding-left: 2rem; margin-top: 1rem; }
+.post-content ul, .post-content ol { padding-left: 1rem; margin-top: 1rem; }
 .post-content li { list-style-type: initial; @include corpus-italic; }
 .post-nav, .post-nav a { color: $secondary; }
-.post-comments { margin-top: 4rem; }
+.post-comments { margin-top: 2rem; }
 
 @media screen and (max-width:$phone) {
 	.post-title { font-size: 1.5rem; line-height: 1.3; }

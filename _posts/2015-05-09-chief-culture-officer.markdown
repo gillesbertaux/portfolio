@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Startup HR: Chief Culture Officer"
+title: "Startup HR: Chief Culture Officer"
 description: Here’s what could be a job offer for a Chief Culture Officer. His job would be to help the CEO maintaining and coordinating the culture attributes of a company.
-date:   2015-05-09
+date: 2015-05-09
 permalink: /blog/:title/
+lang: en
+status: ok
 ---
 
 Here’s an idea I had the other day after watching [“Hiring and Culture”](http://startupclass.samaltman.com/) from the startup class series. Here’s what could be a job offer for a Chief Culture Officer. His job would be to help the CEO maintain and coordinate the culture attributes of a company. Such position would probably be relevant only after reaching a certain size and maturity.

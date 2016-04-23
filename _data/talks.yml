@@ -1,0 +1,15 @@
+- name: "Product Management 101"
+  url: //speakerdeck.com/gillesbertaux/product-management-101-at-hetic
+  description: "Product Management 101"
+
+- name: "3 Growth Hacks To Test In Less Than an Hour"
+  url: //slideshare.net/mentionapp/mention-unicorns
+  description: "3 Growth Hacks To Test In Less Than an Hour"
+
+- name: "Mention NPS Process"
+  url: //slideshare.net/mentionapp/mention-nps-process-reduce-churn-increase-customer-hapiness
+  description: "Mention NPS Process : Reduce Churn & Increase Customer Happiness"
+
+- name: "Startup Marketing 101"
+  url: //www.slideshare.net/GillesBertaux/startup-marketing-101-61263950
+  description: "Course given at HETIC in France for last year student in their Startup Marketing class"

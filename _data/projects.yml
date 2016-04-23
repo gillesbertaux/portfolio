@@ -1,0 +1,19 @@
+- name: "TubeList"
+  url: //tubelist.co
+  description: "TubeList: Discover new YouTube channels"
+
+- name: "Dataparis.io"
+  url: //dataparis.io
+  description: "Dataparis representation of Paris public datas through the metro network"
+
+- name: "French Open Data Portal"
+  url: //devserver.me/datagouv/data.php
+  description: "French Open Data Portal"
+
+- name: "IMDB Redesign"
+  url: //www.behance.net/gallery/IMDB-Redesign/12321857
+  description: "IMDB Redesign"
+
+- name: "Andy.SCSS"
+  url: //gillesbertaux.com/andy
+  description: "Andy is an open-source collection of useful SASS mixins"

@@ -1,9 +1,10 @@
 ---
+title: Building a Lunch Recommendation Slack Bot with Zapier and Import.io
+date: 2016-03-18 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
-title: "Building a Lunch Recommendation Slack Bot with Zapier and Import.io"
-description: Recently we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.
-date: 2016-03-18
-permalink: /blog/:title/
+description: Recently we tried to build a Slack Bot that would send a food suggestion
+  for lunch every day at noon.
 lang: en
 status: ok
 ---

@@ -1,9 +1,11 @@
 ---
+title: 'Startup HR: Chief Culture Officer'
+date: 2015-05-09 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
-title: "Startup HR: Chief Culture Officer"
-description: Here’s what could be a job offer for a Chief Culture Officer. His job would be to help the CEO maintaining and coordinating the culture attributes of a company.
-date: 2015-05-09
-permalink: /blog/:title/
+description: Here’s what could be a job offer for a Chief Culture Officer. His job
+  would be to help the CEO maintaining and coordinating the culture attributes of
+  a company.
 lang: en
 status: ok
 ---

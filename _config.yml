@@ -1,16 +1,23 @@
-# Site settings
-title: "Gilles Bertaux : Co-founder/CEO Rumble"
+---
+title: 'Gilles Bertaux : Co-founder/CEO Rumble'
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: hello@gillesbertaux.com
-description: "My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention."
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gillesbertaux.com" # the base hostname & protocol for your site
+description: My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving
+  to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.
+baseurl: ''
+url: http://gillesbertaux.com
 twitter_username: gillesbertaux
-github_username:  gillesbertaux
-
-# Build settings
+github_username: gillesbertaux
 markdown: kramdown
 sass:
-    sass_dir: _sass
-    style: :compressed
+  sass_dir: _sass
+  style: :compressed
 gems:
-  - octopress-autoprefixer
+- octopress-autoprefixer

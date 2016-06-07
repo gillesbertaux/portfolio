@@ -11,13 +11,13 @@ collections:
 email: hello@gillesbertaux.com
 description: My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving
   to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.
-baseurl: ''
+baseurl: 
 url: http://gillesbertaux.com
 twitter_username: gillesbertaux
 github_username: gillesbertaux
 markdown: kramdown
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 gems:
 - octopress-autoprefixer

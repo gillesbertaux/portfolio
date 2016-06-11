@@ -57,6 +57,7 @@ hr { display: block; width: 100%; border: 0; }
 .linknav--open:hover { color: #5AD64E; }
 .linknav--talks:hover { color: #00DBAA; }
 .linknav--blog:hover { color: #FF0081; }
+.linknav--qas:hover { color: #FF590A; }
 .main-nav-btn {
   padding: 5px 15px;
   color: #fff;
@@ -104,6 +105,7 @@ header { padding: 150px 0 0 0; width: 100%; }
 .sections--work { color: #9013FE; }
 .sections--open { color: #5AD64E; }
 .sections--talks { color: #00DBAA; }
+.sections--qas { color: #FF590A; }
 .sections--blog, .sections--blog-index { color: #FF0081; }
 
 // Projects

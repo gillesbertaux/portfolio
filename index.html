@@ -20,9 +20,9 @@ layout: default
 	<hr class="top-sep">
 	<ul class="projects">
 
-		{% for project in site.data.projects  %}
+		{% for project in site.projects  %}
 			<li class="project">
-				<a class="project-link" target="_blank" href="{{project.url}}" title="{{project.description}}">{{project.name}}</a>
+				<a class="project-link" target="_blank" href="{{project.link}}" title="{{project.title}}">{{project.title}}</a>
 			</li>
 		{% endfor %}
 
@@ -34,9 +34,9 @@ layout: default
 	<hr class="top-sep">
   <ul class="projects">
 
-		{% for talk in site.data.talks %}
+		{% for talk in site.talks %}
 			<li class="project">
-				<a class="project-link" target="_blank" href="{{talk.url}}" title="{{talk.description}}">{{talk.name}}</a>
+				<a class="project-link" target="_blank" href="{{talk.link}}" title="{{talk.title}}">{{talk.title}}</a>
 			</li>
 		{% endfor %}
 
@@ -73,14 +73,14 @@ layout: default
 </section>
 
 <section class="main-section">
-	<p id="blog" class="sections sections--blog"><strong>Q&As</strong></p>
+	<p id="qas" class="sections sections--qas"><strong>Q&As</strong></p>
 	<hr class="top-sep">
 	<ul>
 
 		{% for answer in site.quora  %}
 
 			<li class="index-post">
-				<a class="index-post-link" href="{{ answer.url }}" target="_blank" title="{{ answer.title }}">{{ answer.title }}</a>
+				<a class="index-post-link" href="{{ answer.link }}" target="_blank" title="{{ answer.title }}">{{ answer.title }}</a>
 			</li>
 
 		{% endfor %}

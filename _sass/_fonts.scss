@@ -1,0 +1,49 @@
+$big: 1.2rem;
+$biggest: 1.8rem;
+$middle: 1.2rem;
+$default: 1rem;
+$small: .875rem;
+$verysmall: .7rem;
+
+$bold: 700;
+$verybold: 900;
+$normal: 400;
+strong { font-weight: 600; }
+
+$main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+
+h1 {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  font-style: normal;
+  font-size: $big;
+  line-height: 1.2;
+  margin-bottom: 21px;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-weight: $normal;
+  font-style: normal;
+  font-size: $small;
+  line-height: 2;
+}
+
+h3 {
+  font-weight: $bold;
+  font-style: normal;
+  font-size: $default;
+}
+
+p, body  {
+  font-family: $main-font;
+  font-weight: $normal;
+  font-style: normal;
+  font-size: $small;
+  line-height: 1.8;
+}
+
+a, a:hover {
+  text-decoration: none;
+}

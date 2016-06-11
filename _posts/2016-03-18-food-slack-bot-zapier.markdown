@@ -6,7 +6,7 @@ layout: post
 description: I've been using Zapier intensively for a while now and I built some pretty
   advanced cool integrations with all sort of tools. This how we built a recommendation
   slack bot with zapier.
-lang: en
+lang: fr
 status: ok
 ---
 

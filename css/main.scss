@@ -1,14 +1,10 @@
 ---
 ---
-
 @charset "UTF-8";
-
-@import "_folio-reset.scss";
-@import "_folio-spacing.scss";
-@import "_folio-colors.scss";
-@import "_folio-fonts.scss";
-@import "_folio-transition";
-
+@import "_reset.scss";
+@import "_spacing.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
+@import "_transition";
 @import "_syntax-highlighting";
-
-@import "_folio-main.scss";
+@import "_main.scss";

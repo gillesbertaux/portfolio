@@ -1,20 +1,14 @@
-/*=============================================================================
-   COLORS
-   ========================================================================== */
-
-$blue: #3CA8DB;
+$blue: #3ca8db;
 $darkgrey: #222;
+$middlegrey: #9013fe;
 $grey: #444;
 $lightgrey: #eee;
 $verylightgrey: #f9f9f9;
-$red: #D24367;
-
+$red: #d24367;
+$white: #ffffff;
 $primary: $darkgrey;
 $secondary: $blue;
 $tertiary: $grey;
-
-/**** GLOBAL RULES ****/
-
 h1, h2 { color: $primary; }
 p, li { color: $tertiary; }
 a { color: $secondary; }

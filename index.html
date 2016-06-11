@@ -15,43 +15,43 @@ layout: default
 	</article>
 </header>
 
-<section class="main-section">
-	<p id="projects" class="sections sections--work"><strong>SIDE PROJECTS</strong></p>
-	<hr class="top-sep">
-	<ul class="projects">
+<section class="section">
+	<p id="projects" class="section-title section-title--work"><strong>SIDE PROJECTS</strong></p>
+	<hr class="sep">
+	<ul class="items">
 
 		{% for project in site.projects  %}
-			<li class="project">
-				<a class="project-link" target="_blank" href="{{project.link}}" title="{{project.title}}">{{project.title}}</a>
+			<li class="item">
+				<a class="item-link" target="_blank" href="{{project.link}}" title="{{project.title}}">{{project.title}}</a>
 			</li>
 		{% endfor %}
 
   </ul>
 </section>
 
-<section class="main-section">
-	<p id="talks" class="sections sections--talks"><strong>TALKS</strong></p>
-	<hr class="top-sep">
-  <ul class="projects">
+<section class="section">
+	<p id="talks" class="section-title section-title--talks"><strong>TALKS</strong></p>
+	<hr class="sep">
+  <ul class="items">
 
 		{% for talk in site.talks %}
-			<li class="project">
-				<a class="project-link" target="_blank" href="{{talk.link}}" title="{{talk.title}}">{{talk.title}}</a>
+			<li class="item">
+				<a class="item-link" target="_blank" href="{{talk.link}}" title="{{talk.title}}">{{talk.title}}</a>
 			</li>
 		{% endfor %}
 
   </ul>
 </section>
 
-<section class="main-section">
-	<div id="blog" class="sections sections--blog">
+<section class="section">
+	<div id="blog" class="section-title section-title--blog">
 		<strong>ESSAYS</strong>
 		<div class="langs">
 			<span>🇫🇷</span><input class="checkbox" type="checkbox" name="lang" value="fr" checked>
 	  	<span>🇺🇸</span><input class="checkbox" type="checkbox" name="lang" value="en" checked>
   	</div>
 	</div>
-	<hr class="top-sep">
+	<hr class="sep">
 	<ul>
 
 		{% assign count = 0 %}
@@ -67,15 +67,15 @@ layout: default
   </ul>
 </section>
 
-<section class="main-section">
-	<p id="qas" class="sections sections--qas"><strong>Q&As</strong></p>
-	<hr class="top-sep">
-	<ul>
+<section class="section">
+	<p id="qas" class="section-title section-title--qas"><strong>Q&As</strong></p>
+	<hr class="sep">
+	<ul class="items">
 
 		{% for answer in site.quora  %}
 
-			<li class="project">
-				<a class="project-link" href="{{ answer.link }}" target="_blank" title="{{ answer.title }}">{{ answer.title }}</a>
+			<li class="item">
+				<a class="item-link" href="{{ answer.link }}" target="_blank" title="{{ answer.title }}">{{ answer.title }}</a>
 			</li>
 
 		{% endfor %}

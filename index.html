@@ -6,12 +6,12 @@ layout: default
 	<article class="presentation">
 		<h1>{{ site.title }}</h1>
 		<p class="intro">I love building, writing and reading about products, startups, and the Web. Currently on a mission to make your webinars smarter, simpler and more efficient.</p>
-    <p>Current status: <strong>Co-founder & CEO</strong> at <a href="//rumble.live" target="_blank">Rumble</a>.<br />
+    <p>Current status: <strong>Co-founder & CEO</strong> at <a href="//livestorm.co" target="_blank">Livestorm</a>.<br />
 		Formerly: <strong>Product Designer</strong> at <a href="//totems.co" target="_blank">TOTEMS</a> (exit by Stripe) / <strong>Growth Hacker</strong> at <a href="//mention.com/en/" target="_blank">Mention</a>.</p>
 
-    <h2>ABOUT RUMBLE</h2>
-		<p>At Rumble we help companies host smarter webinars. Our mission is to provide simpler, more efficient webinars that drive better leads. We strive to build the best experience possible for our users. We focus on design, high disponibility and technical capabilties.</p>
-    <p>We provide smarter webinars, you get better leads.<br><a href="//rumble.live">Get early access</a></p>
+    <h2>ABOUT LIVESTORM</h2>
+		<p>At Livestorm we help companies host smarter webinars. Our mission is to provide simpler, more efficient webinars that drive better leads. We strive to build the best experience possible for our users. We focus on design, high disponibility and technical capabilties.</p>
+    <p>We provide smarter webinars, you get better leads.<br><a href="//livestorm.co">Get early access</a></p>
 	</article>
 </header>
 
@@ -25,7 +25,7 @@ layout: default
 				<a class="project-link" target="_blank" href="{{project.url}}" title="{{project.description}}">{{project.name}}</a>
 			</li>
 		{% endfor %}
-		
+
   </ul>
 </section>
 
@@ -47,11 +47,11 @@ layout: default
 	<p id="blog" class="sections sections--blog"><strong>ESSAYS</strong></p>
 	<hr class="top-sep">
 	<ul>
-		
+
 		{% assign count = 0 %}
 		{% for post in site.posts %}
 			{% assign count = count | plus: 1 %}
-			
+
 			{% if post.status == "ok" %}
 				{% if count == 1 %}
 
@@ -64,7 +64,7 @@ layout: default
 				<li class="index-post">
 					<a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} ({{post.lang}})</a>
 				</li>
-				
+
 				{% endif %}
 			{% endif %}
 		{% endfor %}
@@ -76,7 +76,7 @@ layout: default
 			<li class="index-post">
 				<a class="index-post-link" href="{{ answer.url }}" target="_blank" title="{{ answer.name }}">{{ answer.name }} <em>(Quora)</em></a>
 			</li>
-			
+
 		{% endfor %}
 
   </ul>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gilles Bertaux : Co-founder/CEO Rumble</title>
-    <description>My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
+    <title>Gilles Bertaux : Co-founder/CEO Livestorm</title>
+    <description>My name is Gilles Bertaux. I am one of the co-founder of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
     <link>http://gillesbertaux.com/</link>
     <atom:link href="http://gillesbertaux.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 23 Apr 2016 13:07:10 +0200</pubDate>
-    <lastBuildDate>Sat, 23 Apr 2016 13:07:10 +0200</lastBuildDate>
+    <pubDate>Thu, 05 May 2016 18:54:05 +0200</pubDate>
+    <lastBuildDate>Thu, 05 May 2016 18:54:05 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -88,7 +88,7 @@
     
       <item>
         <title>Building a Lunch Recommendation Slack Bot with Zapier and Import.io</title>
-        <description>&lt;p&gt;I’ve been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices.&lt;/p&gt;
+        <description>&lt;p&gt;I’ve been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices at &lt;a href=&quot;https://livestorm.co&quot;&gt;Livestorm&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Here’s the basic story I was aiming for:&lt;/p&gt;
 
@@ -106,7 +106,7 @@
 
 &lt;h2 id=&quot;find-a-reliable-source-of-data&quot;&gt;Find a reliable source of data&lt;/h2&gt;
 
-&lt;p&gt;First things first, let’s find some data source worth scrapping. So far, I figured that Yelp was the best shot but you might have some local platform in your area that’s more accurate.&lt;/p&gt;
+&lt;p&gt;First things first, let’s find some data source worth scrapping. I figured that Yelp was our best choice but you might have some local platform in your area that’s more accurate.&lt;/p&gt;
 
 &lt;p&gt;I want restaurants with the following criterias:&lt;/p&gt;
 
@@ -124,7 +124,7 @@
 
 &lt;h2 id=&quot;crawl-the-source-using-importiohttpimportio--store-in-google-spreadsheet&quot;&gt;Crawl the source using &lt;a href=&quot;http://import.io&quot;&gt;Import.io&lt;/a&gt; &amp;amp; Store in Google Spreadsheet&lt;/h2&gt;
 
-&lt;p&gt;I am not going to do a step by step tutorial on Import.io since it’s pretty straightfroward. But basically pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.&lt;/p&gt;
+&lt;p&gt;I am not going to do a step by step tutorial on Import.io since it’s pretty straightfroward. Basically, pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.&lt;/p&gt;
 
 &lt;p&gt;Pick the data you need, here I selected:&lt;/p&gt;
 
@@ -167,7 +167,9 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/slack-msg.png&quot; alt=&quot;slack message&quot; title=&quot;slack message&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;To be 100% honest we stopped using it because the data we scraped was not as reliable as we thought. So try to get some real good up to date data.&lt;/p&gt;
+&lt;p&gt;To be 100% honest we stopped using it at &lt;a href=&quot;https://livestorm.co&quot;&gt;Livestorm&lt;/a&gt; because the data we scraped was not as reliable as we thought. So try to get some real good up to date data.&lt;/p&gt;
+
+&lt;p&gt;Next step will be: cleaner data and a basic hosted randomization engine server-side.&lt;/p&gt;
 
 &lt;p&gt;Hope that helps.&lt;/p&gt;
 

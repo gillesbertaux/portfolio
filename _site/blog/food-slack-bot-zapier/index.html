@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Gilles Bertaux : Co-founder/CEO Rumble | Building a Lunch Recommendation Slack Bot with Zapier and Import.io</title>
+	<title>Gilles Bertaux : Co-founder/CEO Livestorm | Building a Lunch Recommendation Slack Bot with Zapier and Import.io</title>
 
 	<!-- General Metas -->
 	<meta name="google-site-verification" content="dP8o9sKNCibdnxzpaDA0blhIHptcacqhvKiVzYIdGME" />
@@ -11,7 +11,7 @@
 	
 	<meta name="author" content="Gilles Bertaux, hello@gillesbertaux.com">
 	
-	<meta name="description" content="Recently we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.">
+	<meta name="description" content="Recently at Livestorm we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
@@ -24,12 +24,12 @@
 
 	<!-- Facebook Metas -->
 	<meta property='og:locale' content='fr_FR'/>
-	<meta property='og:title' content='Gilles Bertaux : Co-founder/CEO Rumble | Building a Lunch Recommendation Slack Bot with Zapier and Import.io'/>
+	<meta property='og:title' content='Gilles Bertaux : Co-founder/CEO Livestorm | Building a Lunch Recommendation Slack Bot with Zapier and Import.io'/>
 	
-	<meta property='og:description' content="Recently we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon."/>
+	<meta property='og:description' content="Recently at Livestorm we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon."/>
 	
 	<meta property='og:url' content='http://gillesbertaux.com'/>
-	<meta property='og:site_name' content='Gilles Bertaux : Co-founder/CEO Rumble'/>
+	<meta property='og:site_name' content='Gilles Bertaux : Co-founder/CEO Livestorm'/>
 	<meta property='og:type' content='website'/>
 	
 	<meta property='og:image' content="http://www.gillesbertaux.com/img/gradient.jpg" />
@@ -38,9 +38,9 @@
 	<!-- Twitter Metas -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@gillesbertaux">
-	<meta name="twitter:title" content="Gilles Bertaux : Co-founder/CEO Rumble | Building a Lunch Recommendation Slack Bot with Zapier and Import.io">
+	<meta name="twitter:title" content="Gilles Bertaux : Co-founder/CEO Livestorm | Building a Lunch Recommendation Slack Bot with Zapier and Import.io">
 	
-	<meta name="twitter:description" content="Recently we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.">
+	<meta name="twitter:description" content="Recently at Livestorm we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.">
 	
 	<meta name="twitter:creator" content="@gillesbertaux">
 	
@@ -51,7 +51,7 @@
 	<!-- Google / Schema -->
 	<meta itemprop="name" content="Building a Lunch Recommendation Slack Bot with Zapier and Import.io">
 	
-	<meta itemprop="description" content="Recently we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.">
+	<meta itemprop="description" content="Recently at Livestorm we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.">
 	
 
 	<!-- IE -->
@@ -72,17 +72,17 @@
 <body>
 
   <nav class="main-nav">
-    <div>
-      <a class="link-nav linknav--about"href="/">About</a>
-      <a class="link-nav linknav--work"href="/#projects">Projects</a>
-      <a class="link-nav linknav--talks"href="/#talks">Talks</a>
-      <a class="link-nav linknav--blog"href="/#blog">Blog</a>
-    </div>
-    <div>
-      <span class="desc-nav">Get early access to Rumble</span>
-      <a class="main-nav-btn" href="//rumble.live">Register</a>
-    </div>
-  </nav>
+  <div>
+    <a class="link-nav linknav--about"href="/">Home</a>
+    <a class="link-nav linknav--work"href="/#projects">Projects</a>
+    <a class="link-nav linknav--talks"href="/#talks">Talks</a>
+    <a class="link-nav linknav--blog"href="/#blog">Essays</a>
+  </div>
+  <div>
+    <span class="desc-nav">Need to run smarter webinars?</span>
+    <a class="main-nav-btn" href="//livestorm.co">See Livestorm</a>
+  </div>
+</nav>
 
   <div class="wrapper wrapper--post" itemscope itemtype="http://schema.org/Article">
 
@@ -93,7 +93,7 @@
   	</header>
 
     <article class="post-content" itemprop="text">
-    <p>I’ve been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices.</p>
+    <p>I’ve been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices at <a href="https://livestorm.co">Livestorm</a>.</p>
 
 <p>Here’s the basic story I was aiming for:</p>
 
@@ -111,7 +111,7 @@
 
 <h2 id="find-a-reliable-source-of-data">Find a reliable source of data</h2>
 
-<p>First things first, let’s find some data source worth scrapping. So far, I figured that Yelp was the best shot but you might have some local platform in your area that’s more accurate.</p>
+<p>First things first, let’s find some data source worth scrapping. I figured that Yelp was our best choice but you might have some local platform in your area that’s more accurate.</p>
 
 <p>I want restaurants with the following criterias:</p>
 
@@ -129,7 +129,7 @@
 
 <h2 id="crawl-the-source-using-importiohttpimportio--store-in-google-spreadsheet">Crawl the source using <a href="http://import.io">Import.io</a> &amp; Store in Google Spreadsheet</h2>
 
-<p>I am not going to do a step by step tutorial on Import.io since it’s pretty straightfroward. But basically pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.</p>
+<p>I am not going to do a step by step tutorial on Import.io since it’s pretty straightfroward. Basically, pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.</p>
 
 <p>Pick the data you need, here I selected:</p>
 
@@ -172,7 +172,9 @@
 
 <p><img src="/img/slack-msg.png" alt="slack message" title="slack message" /></p>
 
-<p>To be 100% honest we stopped using it because the data we scraped was not as reliable as we thought. So try to get some real good up to date data.</p>
+<p>To be 100% honest we stopped using it at <a href="https://livestorm.co">Livestorm</a> because the data we scraped was not as reliable as we thought. So try to get some real good up to date data.</p>
+
+<p>Next step will be: cleaner data and a basic hosted randomization engine server-side.</p>
 
 <p>Hope that helps.</p>
 
@@ -183,26 +185,28 @@
 
   </div>
 
-  <script src='/js/min/main-min.js'></script>
+  <script src='/js/jquery-1.11.0.min.js'></script>
+<script src='/js/main.min.js'></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
   ga('create', 'UA-27077783-5', 'auto');
   ga('send', 'pageview');
-  </script>
+</script>
   <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES * * */
-      var disqus_shortname = 'gillesbertaux';
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'gillesbertaux';
 
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </body>
 </html>

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Building a Lunch Recommendation Slack Bot with Zapier and Import.io"
-description: Recently we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.
+description: Recently at Livestorm we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.
 date: 2016-03-18
 permalink: /blog/:title/
 lang: en
 status: ok
 ---
 
-I've been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices.
+I've been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices at [Livestorm](https://livestorm.co).
 
 Here's the basic story I was aiming for:
 
@@ -18,13 +18,13 @@ Here are the main steps to build the Slack Bot:
 
 1. Scrap a viable source of restaurants
 2. Clean the data
-3. Start the Zapier integration 
+3. Start the Zapier integration
 4. Insert a small JS script to randomize
 5. Send the message in Slack
 
 ## Find a reliable source of data
 
-First things first, let's find some data source worth scrapping. So far, I figured that Yelp was the best shot but you might have some local platform in your area that's more accurate.
+First things first, let's find some data source worth scrapping. I figured that Yelp was our best choice but you might have some local platform in your area that's more accurate.
 
 I want restaurants with the following criterias:
 
@@ -40,7 +40,7 @@ Go to Yelp and applied those criterias. Then copy paste the URL once the criteri
 
 ## Crawl the source using [Import.io](http://import.io) & Store in Google Spreadsheet
 
-I am not going to do a step by step tutorial on Import.io since it's pretty straightfroward. But basically pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.
+I am not going to do a step by step tutorial on Import.io since it's pretty straightfroward. Basically, pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.
 
 Pick the data you need, here I selected:
 
@@ -81,9 +81,9 @@ And voilà. Here's how it looks every day at noon:
 
 ![slack message](/img/slack-msg.png "slack message")
 
-To be 100% honest we stopped using it because the data we scraped was not as reliable as we thought. So try to get some real good up to date data. 
+To be 100% honest we stopped using it at [Livestorm](https://livestorm.co) because the data we scraped was not as reliable as we thought. So try to get some real good up to date data.
+
+Next step will be: cleaner data and a basic hosted randomization engine server-side.
 
 Hope that helps.
-
- 
 

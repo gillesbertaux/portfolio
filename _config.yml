@@ -1,7 +1,7 @@
 # Site settings
-title: "Gilles Bertaux : Co-founder/CEO Rumble"
+title: "Gilles Bertaux : Co-founder/CEO Livestorm"
 email: hello@gillesbertaux.com
-description: "My name is Gilles Bertaux. I am one of the co-founder of Rumble. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention."
+description: "My name is Gilles Bertaux. I am one of the co-founder of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gillesbertaux.com" # the base hostname & protocol for your site
 twitter_username: gillesbertaux
@@ -14,3 +14,5 @@ sass:
     style: :compressed
 gems:
   - octopress-autoprefixer
+  - jekyll-assets
+  - jekyll-coffeescript

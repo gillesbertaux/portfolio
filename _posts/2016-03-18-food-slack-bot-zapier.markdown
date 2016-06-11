@@ -3,10 +3,13 @@ title: Food Recommendation Slack Bot with Zapier
 date: 2016-03-18 00:00:00 Z
 permalink: "/blog/:title/"
 layout: post
-description: I've been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. This how we built a recommendation slack bot with zapier.
+description: I've been using Zapier intensively for a while now and I built some pretty
+  advanced cool integrations with all sort of tools. This how we built a recommendation
+  slack bot with zapier.
 lang: en
 status: ok
 ---
+
 I've been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices at [Livestorm](https://livestorm.co).
 
 Here's the basic story I was aiming for:

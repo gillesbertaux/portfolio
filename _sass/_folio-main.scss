@@ -16,6 +16,8 @@ li { list-style-type: none; }
 a { border-bottom: 1px solid rgba(60,168,219,.1); }
 a:hover { border-bottom-color: $blue; }
 
+.checkbox {vertical-align: text-bottom;}
+
 hr { display: block; width: 100%; border: 0; }
 .top-sep {
   max-width: 650px;
@@ -115,8 +117,23 @@ header { padding: 150px 0 0 0; width: 100%; }
 .project:hover::before { color: $darkgrey; @include hover(.3s) }
 
 // Blog Index
-.sections--blog-index { margin-top: 84px; }
-.index-post { @include corpus($default, italic, $corpus-size); }
+.sections--blog {
+  & .langs {
+    margin-left: 20px;
+  }
+}
+.index-post {
+  @include corpus($default, italic, $corpus-size);
+}
+
+.index-post{
+  display: none;
+  &.active{
+    display: block;
+    transition: all ease-in-out .2s;
+  }
+}
+
 .index-post:before { content: "•  "; color: $grey; @include hover(.3s) }
 .index-post:hover::before { color: $darkgrey; @include hover(.3s) }
 .new-post {

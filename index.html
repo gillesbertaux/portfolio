@@ -44,7 +44,13 @@ layout: default
 </section>
 
 <section class="main-section">
-	<p id="blog" class="sections sections--blog"><strong>ESSAYS</strong></p>
+	<div id="blog" class="sections sections--blog">
+		<strong>ESSAYS</strong>
+		<div class="langs">
+			<span>🇫🇷</span><input class="checkbox" type="checkbox" name="lang" value="fr" checked>
+	  	<span>🇺🇸</span><input class="checkbox" type="checkbox" name="lang" value="en" checked>
+  	</div>
+	</div>
 	<hr class="top-sep">
 	<ul>
 
@@ -52,21 +58,10 @@ layout: default
 		{% for post in site.posts %}
 			{% assign count = count | plus: 1 %}
 
-			{% if post.status == "ok" %}
-				{% if count == 1 %}
-
-				<li class="index-post">
-					<a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} ({{post.lang}})</a><span class="new-post">NEW</span>
+				<li class="index-post active" data-lang="{{post.lang}}">
+					<a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} {% if post.status == "ok" %}{% if count == 1 %}<span class="new-post">NEW</span>{% endif %}{% endif %}</a>
 				</li>
 
-				{% else %}
-
-				<li class="index-post">
-					<a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} ({{post.lang}})</a>
-				</li>
-
-				{% endif %}
-			{% endif %}
 		{% endfor %}
 
   </ul>
@@ -79,8 +74,8 @@ layout: default
 
 		{% for answer in site.quora  %}
 
-			<li class="index-post">
-				<a class="index-post-link" href="{{ answer.link }}" target="_blank" title="{{ answer.title }}">{{ answer.title }}</a>
+			<li class="project">
+				<a class="project-link" href="{{ answer.link }}" target="_blank" title="{{ answer.title }}">{{ answer.title }}</a>
 			</li>
 
 		{% endfor %}

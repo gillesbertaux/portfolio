@@ -1,9 +1,10 @@
 ---
+title: 'Hacking the Twitter Follow Button: Mass Follow Shortcut'
+date: 2016-03-18 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
-title: "Hacking the Twitter Follow Button: Mass Follow Shortcut"
-description: ere's a little trick I found playing around with Twitter the other day. I build a mass follow button for Twitter.
-date: 2016-03-18
-permalink: /blog/:title/
+description: ere's a little trick I found playing around with Twitter the other day.
+  I build a mass follow button for Twitter.
 lang: en
 status: ok
 ---

@@ -1,9 +1,10 @@
 ---
+title: Imgurians be like
+date: 2016-04-23 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
-title: "Imgurians be like"
-description: I wonder sometimes what the hell I used to do with my time before Imgur. But I can't help telling myself that I should have started sooner.
-date: 2016-04-23
-permalink: /blog/:title/
+description: I wonder sometimes what the hell I used to do with my time before Imgur.
+  But I can't help telling myself that I should have started sooner.
 lang: en
 status: ok
 cover: http://i.imgur.com/EjE0lFX.gif

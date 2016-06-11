@@ -1,9 +1,17 @@
 ---
+title: Building a Lunch Recommendation Slack Bot with Zapier and Import.io
+date: 2016-03-18 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
+<<<<<<< HEAD:_posts/2016-03-21-food-slack-bot-zapier.markdown
 title: "Building a Lunch Recommendation Slack Bot with Zapier and Import.io"
 description: Recently at Livestorm we tried to build a Slack Bot that would send a food suggestion for lunch every day at noon.
 date: 2016-03-18
 permalink: /blog/:title/
+=======
+description: Recently we tried to build a Slack Bot that would send a food suggestion
+  for lunch every day at noon.
+>>>>>>> 35cb85990b607ff036c673efa9bb54c7cd32cdac:_posts/2016-03-18-food-slack-bot-zapier.markdown
 lang: en
 status: ok
 ---

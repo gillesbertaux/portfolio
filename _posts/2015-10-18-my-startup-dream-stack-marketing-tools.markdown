@@ -1,9 +1,11 @@
 ---
+title: 'SaaS Marketing Startup Stack #1'
+date: 2015-10-18 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
-title: "SaaS Marketing Startup Stack #1"
-description: This is the first part of several posts in which you’ll find a variety of tools in every field whereas it is marketing, tech, design or even operations (HR, admin, etc.).
-date: 2015-10-18
-permalink: /blog/:title/
+description: This is the first part of several posts in which you’ll find a variety
+  of tools in every field whereas it is marketing, tech, design or even operations
+  (HR, admin, etc.).
 lang: en
 status: ok
 cover: gillesbertaux.com/img/segment.png

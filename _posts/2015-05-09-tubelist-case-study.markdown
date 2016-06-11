@@ -1,9 +1,11 @@
 ---
+title: 'Tubelist.co: from MVP to ProductHunt launch in 14 days'
+date: 2015-05-09 00:00:00 Z
+permalink: "/blog/:title/"
 layout: post
-title: "Tubelist.co: from MVP to ProductHunt launch in 14 days"
-description: TubeList is a new way to explore and discover new Youtube channels everyday and upvote the ones you like. Think of it as a Product Hunt or a Reddit for Youtube channels.
-date: 2015-05-09
-permalink: /blog/:title/
+description: TubeList is a new way to explore and discover new Youtube channels everyday
+  and upvote the ones you like. Think of it as a Product Hunt or a Reddit for Youtube
+  channels.
 lang: en
 status: ok
 ---

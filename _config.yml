@@ -1,17 +1,15 @@
 # Site settings
 title: "Gilles Bertaux : Co-founder/CEO Livestorm"
 email: hello@gillesbertaux.com
-description: "My name is Gilles Bertaux. I am one of the co-founder of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention."
+description: "My name is Gilles Bertaux. I am the co-founder and CEO of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gillesbertaux.com" # the base hostname & protocol for your site
 twitter_username: gillesbertaux
-github_username:  gillesbertaux
-
-# Build settings
+github_username: gillesbertaux
 markdown: kramdown
 sass:
-    sass_dir: _sass
-    style: :compressed
+  sass_dir: _sass
+  style: compressed
 gems:
   - octopress-autoprefixer
   - jekyll-assets

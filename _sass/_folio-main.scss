@@ -24,19 +24,30 @@ hr { display: block; width: 100%; border: 0; }
 }
 
 // Global Wrapper
-.wrapper { width: 90%; margin: 0 auto; }
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 650px;
+}
 @media screen and (min-width:$phone) { .wrapper { width: 100%; } }
 
 // Nav
 .main-nav {
+  position: fixed;
+  top: 0px;
 	display: flex;
 	justify-content: space-between;
-	width: 90%;
+	width: 100%;
 	max-width: 650px;
-	margin: 0 auto 42px auto;
+	margin: 0 auto;
 	padding: 42px 0 21px 0;
 	background-color: #fff;
 	border-bottom: 1px solid $lightgrey;
+  transition: all ease-in-out .2s;
+  &.active {
+    padding: 21px 0 21px 0;
+    opacity: .9;
+  }
 }
 
 .link-nav { @include corpus-normal; color: $grey; margin-right: 15px; }
@@ -60,7 +71,7 @@ hr { display: block; width: 100%; border: 0; }
 }
 
 // Sections
-header { margin: 2.25rem auto 1.25rem auto; max-width: 650px; }
+header { padding: 150px 0 0 0; width: 100%; }
 
 .main-section,
 .presentation {

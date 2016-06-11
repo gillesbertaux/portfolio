@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gilles Bertaux : Co-founder/CEO Livestorm</title>
-    <description>My name is Gilles Bertaux. I am one of the co-founder of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
+    <description>My name is Gilles Bertaux. I am the co-founder and CEO of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
     <link>http://gillesbertaux.com/</link>
     <atom:link href="http://gillesbertaux.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 May 2016 18:54:05 +0200</pubDate>
-    <lastBuildDate>Thu, 05 May 2016 18:54:05 +0200</lastBuildDate>
+    <pubDate>Sat, 11 Jun 2016 09:32:16 +0000</pubDate>
+    <lastBuildDate>Sat, 11 Jun 2016 09:32:16 +0000</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -79,7 +79,7 @@
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Jy4TM1w.gif&quot; alt=&quot;Polite cat&quot; title=&quot;polite cat&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 23 Apr 2016 00:00:00 +0200</pubDate>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
         <link>http://gillesbertaux.com/blog/imgurians-be-like/</link>
         <guid isPermaLink="true">http://gillesbertaux.com/blog/imgurians-be-like/</guid>
         
@@ -87,7 +87,45 @@
       </item>
     
       <item>
-        <title>Building a Lunch Recommendation Slack Bot with Zapier and Import.io</title>
+        <title>Hacking the Twitter Follow Button: Mass Follow Shortcut</title>
+        <description>&lt;p&gt;Here’s a little trick I found playing around with Twitter the other day. I had this Twitter list full of relevant people for &lt;a href=&quot;https://rumble.live&quot;&gt;Rumble&lt;/a&gt;, it had hundreds of profiles. I could follow them one by one but that would have taken forever.&lt;/p&gt;
+
+&lt;p&gt;I did one simple thing: &lt;strong&gt;I retrieved the CSS selector path of a “Follow” button (making sure to exclude the “Unfollow”), and triggered a quick JQuery&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.click()&lt;/code&gt; &lt;strong&gt;method to click on all the matching elements&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/follow-script.gif&quot; alt=&quot;script gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s the selector path with the JQuery trigger:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+$(&quot;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&quot;).click()
+&lt;/code&gt;
+You can limit the number of clicks by adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;.slice()&lt;/code&gt; method:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+$(&quot;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&quot;).slice(0,50).click()
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That was already pretty useful, but I wanted something more straightforward than having to open the console and paste the snippet.&lt;/p&gt;
+
+&lt;p&gt;Here’s what I came up with:&lt;/p&gt;
+
+&lt;p&gt;&lt;a style=&quot;padding: 10px 20px;     background: #059FF5;     border-radius: 3px;     margin: 10px 0;     display: inline-block;     font-weight: 600;     color: #fff;&quot; href=&quot;javascript:$(&#39;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&#39;).slice(0,50).click()&quot;&gt;Mass Twitter Follow Button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just drag this button in your bookmark bar and here you go : &lt;strong&gt;a mass follow button&lt;/strong&gt;. Just hit that button and you will trigger a click on 50 follow buttons in your window.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/button.gif&quot; alt=&quot;button gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This actually gave me the following idea: it’d be awesome to have &lt;strong&gt;a small library of shortcuts to trigger very simple scripts&lt;/strong&gt;. It could help marketers, or people who just don’t code, solving simple problems, gain time and, at the end of the day, be more productive.&lt;/p&gt;
+
+&lt;p&gt;Hope that helps.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
+        <link>http://gillesbertaux.com/blog/mass-follow-shortcut/</link>
+        <guid isPermaLink="true">http://gillesbertaux.com/blog/mass-follow-shortcut/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Food Recommendation Slack Bot with Zapier</title>
         <description>&lt;p&gt;I’ve been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices at &lt;a href=&quot;https://livestorm.co&quot;&gt;Livestorm&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Here’s the basic story I was aiming for:&lt;/p&gt;
@@ -174,47 +212,9 @@
 &lt;p&gt;Hope that helps.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 18 Mar 2016 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
         <link>http://gillesbertaux.com/blog/food-slack-bot-zapier/</link>
         <guid isPermaLink="true">http://gillesbertaux.com/blog/food-slack-bot-zapier/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Hacking the Twitter Follow Button: Mass Follow Shortcut</title>
-        <description>&lt;p&gt;Here’s a little trick I found playing around with Twitter the other day. I had this Twitter list full of relevant people for &lt;a href=&quot;https://rumble.live&quot;&gt;Rumble&lt;/a&gt;, it had hundreds of profiles. I could follow them one by one but that would have taken forever.&lt;/p&gt;
-
-&lt;p&gt;I did one simple thing: &lt;strong&gt;I retrieved the CSS selector path of a “Follow” button (making sure to exclude the “Unfollow”), and triggered a quick JQuery&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.click()&lt;/code&gt; &lt;strong&gt;method to click on all the matching elements&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/follow-script.gif&quot; alt=&quot;script gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s the selector path with the JQuery trigger:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$(&quot;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&quot;).click()
-&lt;/code&gt;
-You can limit the number of clicks by adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;.slice()&lt;/code&gt; method:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$(&quot;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&quot;).slice(0,50).click()
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;That was already pretty useful, but I wanted something more straightforward than having to open the console and paste the snippet.&lt;/p&gt;
-
-&lt;p&gt;Here’s what I came up with:&lt;/p&gt;
-
-&lt;p&gt;&lt;a style=&quot;padding: 10px 20px;     background: #059FF5;     border-radius: 3px;     margin: 10px 0;     display: inline-block;     font-weight: 600;     color: #fff;&quot; href=&quot;javascript:$(&#39;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&#39;).slice(0,50).click()&quot;&gt;Mass Twitter Follow Button&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Just drag this button in your bookmark bar and here you go : &lt;strong&gt;a mass follow button&lt;/strong&gt;. Just hit that button and you will trigger a click on 50 follow buttons in your window.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/button.gif&quot; alt=&quot;button gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This actually gave me the following idea: it’d be awesome to have &lt;strong&gt;a small library of shortcuts to trigger very simple scripts&lt;/strong&gt;. It could help marketers, or people who just don’t code, solving simple problems, gain time and, at the end of the day, be more productive.&lt;/p&gt;
-
-&lt;p&gt;Hope that helps.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Mar 2016 00:00:00 +0100</pubDate>
-        <link>http://gillesbertaux.com/blog/mass-follow-shortcut/</link>
-        <guid isPermaLink="true">http://gillesbertaux.com/blog/mass-follow-shortcut/</guid>
         
         
       </item>
@@ -299,7 +299,7 @@ Hello !&lt;/p&gt;
 
 &lt;p&gt;So here it is, I might be updating this post a little bit with SEO tools such as Moz or BI/Dashboard softwares. Let me know what you think in the comments.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 18 Oct 2015 00:00:00 +0200</pubDate>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 +0000</pubDate>
         <link>http://gillesbertaux.com/blog/my-startup-dream-stack-marketing-tools/</link>
         <guid isPermaLink="true">http://gillesbertaux.com/blog/my-startup-dream-stack-marketing-tools/</guid>
         
@@ -367,7 +367,7 @@ Hello !&lt;/p&gt;
 &lt;p&gt;Also, we would like to thank the people who participated to this project: our friends, family and colleagues of course, but also Lucie Zevaco, Julien Dachaud, Thomas Iturralde, and thanks to Product Hunt and especially Ryan who agreed to highlight TubeList on Product Hunt, you are amazing!&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate>
+        <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
         <link>http://gillesbertaux.com/blog/tubelist-case-study/</link>
         <guid isPermaLink="true">http://gillesbertaux.com/blog/tubelist-case-study/</guid>
         
@@ -401,7 +401,7 @@ Hello !&lt;/p&gt;
 &lt;p&gt;Let me know what you think about having a CCO and its role. Also, do not hesitate to make suggestions for the job requirements, I will be happy to update this post.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate>
+        <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
         <link>http://gillesbertaux.com/blog/chief-culture-officer/</link>
         <guid isPermaLink="true">http://gillesbertaux.com/blog/chief-culture-officer/</guid>
         

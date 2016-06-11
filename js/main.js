@@ -12,6 +12,20 @@ $(document).ready(function() {
   });
 });
 
+$(document).scroll(function () {
+  var el = $('.main-nav');
+  var w = $(window).height() + 200;
+  var s = $(window).scrollTop() + $(window).height();
+
+  if ($('.main-nav')) {
+    if (s > w) {
+      el.addClass('active');
+    } else {
+      el.removeClass('active');
+    }
+  }
+});
+
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {

@@ -59,7 +59,7 @@ layout: default
 			{% assign count = count | plus: 1 %}
 
 				<li class="index-post active" data-lang="{{post.lang}}">
-					<a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} {% if post.status == "ok" %}{% if count == 1 %}<span class="new-post">NEW</span>{% endif %}{% endif %}</a>
+					<a class="index-post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 				</li>
 
 		{% endfor %}

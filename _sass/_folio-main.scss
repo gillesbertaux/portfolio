@@ -13,7 +13,7 @@ body {
 
 p { margin-top: 10px; }
 li { list-style-type: none; }
-a { border-bottom: 1px solid rgba(60,168,219,.1); }
+a { border-bottom: 1px dotted rgba(60,168,219,.1); }
 a:hover { border-bottom-color: $blue; }
 
 .checkbox {vertical-align: text-bottom;}

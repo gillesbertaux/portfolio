@@ -5,8 +5,8 @@
     <description>My name is Gilles Bertaux. I am the co-founder and CEO of Livestorm. Striving to make webinars smarter. Formerly Product Designer at TOTEMS and Growth at Mention.</description>
     <link>http://gillesbertaux.com/</link>
     <atom:link href="http://gillesbertaux.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Jun 2016 09:32:16 +0000</pubDate>
-    <lastBuildDate>Sat, 11 Jun 2016 09:32:16 +0000</lastBuildDate>
+    <pubDate>Sat, 11 Jun 2016 10:40:35 +0000</pubDate>
+    <lastBuildDate>Sat, 11 Jun 2016 10:40:35 +0000</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -94,14 +94,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/follow-script.gif&quot; alt=&quot;script gif&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Here’s the selector path with the JQuery trigger:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$(&quot;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&quot;).click()
-&lt;/code&gt;
-You can limit the number of clicks by adding the &lt;code class=&quot;highlighter-rouge&quot;&gt;.slice()&lt;/code&gt; method:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$(&quot;div.user-actions.btn-group.not-following.not-muting &amp;gt; button&quot;).slice(0,50).click()
-&lt;/code&gt;&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/gillesbertaux/7a4ec47a73f3d8b047a12f4d1ed04bb1.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;That was already pretty useful, but I wanted something more straightforward than having to open the console and paste the snippet.&lt;/p&gt;
 

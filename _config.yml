@@ -8,6 +8,9 @@ collections:
   quora:
     title: Quora
     output: false
+  talks:
+    title: Talks
+    output: true
   uploads:
     title: Uploads
     output: true

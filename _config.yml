@@ -7,7 +7,7 @@ collections:
     output: true
   projects:
     title: Projects
-    output: true
+    output: false
   quora:
     title: Quora
     output: false

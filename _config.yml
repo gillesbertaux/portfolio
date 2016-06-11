@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  projects:
+    title: Projects
+    output: true
   quora:
     title: Quora
     output: false

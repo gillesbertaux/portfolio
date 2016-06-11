@@ -59,7 +59,7 @@ hr {
 
 // Nav
 
-.main-nav {
+.nav {
   position: fixed;
   top: 0px;
 	display: flex;
@@ -94,14 +94,14 @@ hr {
 
 }
 
-.linknav--about:hover { color: $darkgrey; }
-.linknav--work:hover { color: $middlegrey; }
-.linknav--open:hover { color: #5AD64E; }
-.linknav--talks:hover { color: #00DBAA; }
-.linknav--blog:hover { color: #FF0081; }
-.linknav--qas:hover { color: #FF590A; }
+.link-nav--about:hover { color: $darkgrey; }
+.link-nav--work:hover { color: $middlegrey; }
+.link-nav--open:hover { color: #5AD64E; }
+.link-nav--talks:hover { color: #00DBAA; }
+.link-nav--blog:hover { color: #FF0081; }
+.link-nav--qas:hover { color: #FF590A; }
 
-.main-nav-btn {
+.nav-btn {
   padding: 5px 15px;
   color: $white;
   border-radius: 40px;

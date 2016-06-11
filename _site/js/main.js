@@ -28,11 +28,11 @@ $(function() {
 });
 
 $(document).scroll(function () {
-  var el = $('.main-nav');
+  var el = $('.nav');
   var w = $(window).height() + 200;
   var s = $(window).scrollTop() + $(window).height();
 
-  if ($('.main-nav')) {
+  if ($('.nav')) {
     if (s > w) {
       el.addClass('active');
     } else {

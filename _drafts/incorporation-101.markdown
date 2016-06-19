@@ -5,11 +5,11 @@ lang: fr
 description: Un témoignage et un retour d'expérience sur l'incorporation de Livestorm.
 ---
 
-Après quelques mois d'activités, nous avons finalement incorporé Livestorm avec toutes les démarches que cela implique. 
+Après quelques mois d'activités, nous avons incorporé Livestorm avec toutes les démarches que cela implique. 
 
 Si la création de la société est en soi simple et relativement peu onéreuse, il y a toutefois quelques écueils qu'il convient d'éviter.
 
-Voici donc un témoignage et un retour d'expérience "tout frais", sans prétention aucune, avec le regard de 4 étudiants fraichement sortis d'école. 
+Voici donc un témoignage et un retour d'expérience "tout frais", sans prétention, avec le regard de 4 étudiants fraichement sortis d'école. 
 
 ## Incorporation & Création des statuts
 
@@ -23,4 +23,12 @@ Après quelques recherches nous avons opté pour le pack startup premium de Capt
 - La prise en charge de l'accre
 - La publication et dêpot compris
 - La facilité des démarches et le délai
+
+## Le dépôt de capital
+
+Déjà plus compliqué. Il a fallu crapahuter de banque en banque et écouter les différents argumentaires commerciaux pour discerner le bon du mauvais. 
+
+Nos priorités étaient le coût et la disponibilité du service. Or, la BNP propose une offre à 25 euros par mois la première année, carte bancaire et compte en ligne compris. 
+
+À titre de comparaison, les autres banques offraient les mêmes services pour 40 à 50 euros par mois environ.
 

@@ -1,6 +1,8 @@
 ---
 title: Incorporation 101
 date: 2016-06-19 18:11:00 Z
+lang: fr
+description: Un témoignage et un retour d'expérience sur l'incorporation de Livestorm.
 ---
 
 Après quelques mois d'activités, nous avons finalement incorporé Livestorm avec toutes les démarches que cela implique. 

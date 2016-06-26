@@ -1,8 +1,8 @@
 ---
 title: Créer sa boite en sortie d'école - Livestorm
+date: 2016-06-19 18:11:00 Z
 permalink: "/blog/:title/"
 layout: post
-date: 2016-06-19 18:11:00 Z
 lang: fr
 description: Après quelques mois d'activités, nous avons incorporé Livestorm avec
   toutes les démarches que cela implique.

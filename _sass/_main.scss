@@ -12,10 +12,6 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-p {
-  margin-top: 10px;
-}
-
 li {
   list-style-type: none;
 }
@@ -264,11 +260,11 @@ header {
 
 pre,
 code {
-  font-size: $default;
+  font-size: $small;
   color: $red;
   background-color: $verylightgrey;
   border-radius: .25rem;
-  padding: 0px 5px;
+  padding: 0 5px;
   display: inline-block;
   margin: 2px 0;
 }
@@ -293,7 +289,7 @@ pre > code {
   font-size: $biggest;
   font-weight: $verybold;
   line-height: 1.2;
-  margin: 24px 0 0 0;
+  margin: 1.8em 0 .6em 0;
   text-align: left;
   letter-spacing: -.04px;
 }
@@ -346,7 +342,8 @@ blockquote p {
 
 .post-content h2,
 .post-content h3 {
-  margin-top: 24px;
+  line-height: 1.2;
+  margin: 1.8em 0 .6em 0;
 }
 
 .post-content img {
@@ -358,7 +355,8 @@ blockquote p {
 .post-content ul,
 .post-content ol {
   padding-left: 15px;
-  margin-top: 15px;
+  line-height: 1.8;
+  margin: 0 0 1.8em 0;
 }
 
 .post-content li {

@@ -19,7 +19,7 @@ h1 {
   font-style: normal;
   font-size: $big;
   line-height: 1.2;
-  margin-bottom: 21px;
+  margin-bottom: 1.8em;
 }
 
 h2 {
@@ -42,6 +42,7 @@ p, body  {
   font-style: normal;
   font-size: $small;
   line-height: 1.8;
+  margin: 0 0 1.8em 0;
 }
 
 a, a:hover {

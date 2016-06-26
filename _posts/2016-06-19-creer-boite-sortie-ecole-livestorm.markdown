@@ -18,9 +18,10 @@ Voici donc un retour d'expérience sans prétention de quatre primo-entrepreneur
 
 Ce fut la partie facile. Nous aurions pu tout faire nous même mais nous avons préféré passer par un "facilitateur" afin de garder notre focus sur Livestorm.
 
-Le timing était bien choisi puisque nous avons eu l'embarras du choix entre [Captain Contrat](captaincontrat.com), [Jurismatic](http://www.jurismatic.com/) ou encore [Guacamol](https://www.guacamol.co/).
+Le timing était bien choisi puisque nous avons eu l'embarras du choix entre [Captain Contrat](https://captaincontrat.com), [Jurismatic](http://www.jurismatic.com/) ou encore [Guacamol](https://www.guacamol.co/).
 
 Après quelques recherches nous avons opté pour le pack startup premium de Captain Contrat. Les raisons principales qui ont motivé ce choix sont:
+
 - Des tarifs relativement attractifs...
 - ...compte tenu de l'accompagnement
 - La prise en charge de l'accre
@@ -41,7 +42,7 @@ Le dépôt pour Livestorm s’est fait relativement rapidement une fois l’extr
 
 ## Propriété intellectuelle
 
-Tout dépend de votre produit ou marché. Mais gardez un oeil sur [le registre de l’INPI](bases-marques.inpi.fr) sans oublier le [registre européen](https://www.tmdn.org/tmview/welcome) et le [bureau des marques US](https://trademarks.justia.com/).
+Tout dépend de votre produit ou marché. Mais gardez un oeil sur [le registre de l’INPI](https://bases-marques.inpi.fr) sans oublier le [registre européen](https://www.tmdn.org/tmview/welcome) et le [bureau des marques US](https://trademarks.justia.com/).
 
 Comptez 200 euros pour une protection à l’INPI et valable en France. Bien pour débuter.
 
@@ -82,6 +83,7 @@ Si vous touchez des APL en plus, ça devient relativement gérable (surtout en c
 Monter en une entreprise en sortie d’école est abordable. Dans une certaine mesure.
 
 Il existe des facteurs qui vont faire rapidement monter la facture:
+
 - Si vous êtes sur Paris
 - Si vous n’avez pas eu la chance de faire une alternance un an avant
 - Si vous décidez de vous barricadez dès le départ niveau droit

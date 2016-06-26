@@ -229,12 +229,98 @@
     "@type": "Person",
     "name": "Gilles Bertaux"
   },
+  "articleBody": "&lt;p&gt;I’ve been using Zapier intensively for a while now and I built some pretty advanced cool integrations with all sort of tools. Most of them were business related but I wanted to show you how we hacked some fun stuff for our own offices at &lt;a href=&quot;https://livestorm.co&quot;&gt;Livestorm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here’s the basic story I was aiming for:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Every day at noon, I pick a random item in a pre-built restaurant DB. Then the Slack bot sends a new message in our #notifications channel containing the restaurant info.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are the main steps to build the Slack Bot:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Scrap a viable source of restaurants&lt;/li&gt;
+  &lt;li&gt;Clean the data&lt;/li&gt;
+  &lt;li&gt;Start the Zapier integration&lt;/li&gt;
+  &lt;li&gt;Insert a small JS script to randomize&lt;/li&gt;
+  &lt;li&gt;Send the message in Slack&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;find-a-reliable-source-of-data&quot;&gt;Find a reliable source of data&lt;/h2&gt;
+
+&lt;p&gt;First things first, let’s find some data source worth scrapping. I figured that Yelp was our best choice but you might have some local platform in your area that’s more accurate.&lt;/p&gt;
+
+&lt;p&gt;I want restaurants with the following criterias:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Delivery service (Not every restaurant in France offers that service…)&lt;/li&gt;
+  &lt;li&gt;Good restaurants&lt;/li&gt;
+  &lt;li&gt;Reasonably cheap&lt;/li&gt;
+  &lt;li&gt;Close to the office&lt;/li&gt;
+  &lt;li&gt;Open at noon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Go to Yelp and applied those criterias. Then copy paste the URL once the criterias are applied.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/yelp.png&quot; alt=&quot;yelp-criterias&quot; title=&quot;yelp screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;crawl-the-source-using-importiohttpimportio--store-in-google-spreadsheet&quot;&gt;Crawl the source using &lt;a href=&quot;http://import.io&quot;&gt;Import.io&lt;/a&gt; &amp;amp; Store in Google Spreadsheet&lt;/h2&gt;
+
+&lt;p&gt;I am not going to do a step by step tutorial on Import.io since it’s pretty straightfroward. Basically, pick the Crawler option and then go to your Yelp URL. Each data type will be a column in the final CSV generated.&lt;/p&gt;
+
+&lt;p&gt;Pick the data you need, here I selected:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Title&lt;/li&gt;
+  &lt;li&gt;Pricing&lt;/li&gt;
+  &lt;li&gt;Type&lt;/li&gt;
+  &lt;li&gt;Rating&lt;/li&gt;
+  &lt;li&gt;Address&lt;/li&gt;
+  &lt;li&gt;Phone number&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/importio.png&quot; alt=&quot;import.io&quot; title=&quot;import.io screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it! Then just run the crawler. Now import the whole thing to Google Spreadsheet:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sheet.png&quot; alt=&quot;spreadsheet data&quot; title=&quot;spreadsheet data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here I over used the &lt;code class=&quot;highlighter-rouge&quot;&gt;=REGEXEXTRACT()&lt;/code&gt; formula to clean it. Make sure you have the HTML of each item in a column in the list so that you can extract every element you want.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-zapier-integration&quot;&gt;The Zapier integration&lt;/h3&gt;
+
+&lt;p&gt;Almost there. First, since we want the script to run every day at noon, we’ll start with the Sheduling built-in app from Zapier:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/schedule.png&quot; alt=&quot;schedule zapier&quot; title=&quot;schedule zapier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s insert a small Javascript snippet to trigger a random number. Here we trigger something between 1 and 331 because I have 331 entries in my database:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/zapier-js.png&quot; alt=&quot;javascript zapier&quot; title=&quot;javascript zapier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we link our spreadshseet. We want to look up for that random value, we will be reusing the matching row’s data later:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/zapier-lookup-sheet.png&quot; alt=&quot;lookup sheet zapier&quot; title=&quot;lookup sheet zapier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Final touch, we create our Slack message:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/slack-zapier.png&quot; alt=&quot;slack zapier&quot; title=&quot;slack zapier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And voilà. Here’s how it looks every day at noon:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/slack-msg.png&quot; alt=&quot;slack message&quot; title=&quot;slack message&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To be 100% honest we stopped using it at &lt;a href=&quot;https://livestorm.co&quot;&gt;Livestorm&lt;/a&gt; because the data we scraped was not as reliable as we thought. So try to get some real good up to date data.&lt;/p&gt;
+
+&lt;p&gt;Next step will be: cleaner data and a basic hosted randomization engine server-side.&lt;/p&gt;
+
+&lt;p&gt;Hope that helps.&lt;/p&gt;
+
+",
   "publisher": {
     "@type": "Organization",
-    "name": "Livestorm",
+    "name": "Gilles Bertaux",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://pbs.twimg.com/profile_images/739798467795640320/8umwE8F8.jpg",
+      "url": "https://pbs.twimg.com/profile_images/2713230287/665da44b466cc11e706cf5e4cf918618.png",
       "height": "458",
       "width": "458"
     }

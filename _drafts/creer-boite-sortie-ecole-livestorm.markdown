@@ -1,8 +1,9 @@
 ---
-title: Créer sa boite en sortie d'école
+title: Créer sa boite en sortie d'école - Livestorm
 date: 2016-06-19 18:11:00 Z
 lang: fr
-description: Un témoignage et un retour d'expérience sur l'incorporation de Livestorm.
+description: Après quelques mois d'activités, nous avons incorporé Livestorm avec
+  toutes les démarches que cela implique.
 ---
 
 Après quelques mois d'activités, nous avons incorporé Livestorm avec toutes les démarches que cela implique. 
